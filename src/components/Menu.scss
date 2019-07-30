@@ -24,7 +24,7 @@
         }
     }
 
-    .hamburgez,.cheeseburgez,.smokeburgez,.bigburgez,.chickenburgez,.hotdog {
+    .hamburgez,.cheeseburgez,.smokeburgez,.bigburgez,.chickenburgez,.hotdog,.fries,.drinks,.milkshake {
         color: white;
         background: #e50746;
         border: 1px solid #f29299;
@@ -61,5 +61,46 @@
     .price1m,.price2m,.price3m,.price4m {
         margin-left: -15px;
     }
+    .hotdog-list {
+        ul li {
+            margin-left: 1rem;
+            color: #ffed00;
+            text-shadow: 1px 0 0 #ea390d, 0 -1px 0 #ea390d, 0 1px 0 #ea390d, -1px 0 0 #ea390d;
+            justify-content: flex-start;
+        }
+    }
+
+    .fries-list,.drinks-list,.milkshake-list {
+        ul li,p {
+            margin-left: 1rem;
+            color: #e50746;
+            text-shadow: 1px 0 0 #f7bab8, 0 -1px 0 #f7bab8, 0 1px 0 #f7bab8, -1px 0 0 #f7bab8;
+            justify-content: flex-start;
+        }
+        p {
+            margin: 0 0 0 1rem;
+            text-align: left;
+        }
+    }
+
+    #milkprice {
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    .descrip {
+        ul li {
+            color: white;
+            font-size: 0.7rem;
+            text-align: left;
+            justify-content: flex-start;
+        }
+    }
+    #hotprice {
+        color: white;
+        font-size: 1.5rem;
+    }
+
 
 }
