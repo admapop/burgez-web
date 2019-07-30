@@ -2,21 +2,37 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar'
 import Logo from './components/Logo/Logo';
 import { Route, Switch } from 'react-router-dom';
-import Menu from './components/Menu.jsx'
-import "./App.scss";
-import '../node_modules/react-responsive-carousel/lib/styles/carousel.css';
+import { BreakpointProvider } from 'react-socks';
+import { setDefaultBreakpoints } from 'react-socks';
 import Main from './components/Main';
+import Menu from './components/Menu.jsx';
+import Story from './components/Story/Story';
+import Social from './components/Social/Social';
+import Locations from './components/Locations/Locations';
+import "./App.scss";
+
+setDefaultBreakpoints([
+  { mobile: 0 },
+  { tablet: 740 },
+  { desktop: 1024 }
+])
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{position:"fixed"}}>
+      <BreakpointProvider>
       <Logo/>
       <Navbar/>
 
     <Switch>
       <Route exact path="/" component={Main} />
       <Route exact path="/menu" component={Menu} />
+      <Route exact path="/story" component={Story} />
+      <Route exact path="/locations" component={Locations} />
+
     </Switch>
+      <Social/>
+    </BreakpointProvider>
     </div>
   );
 }

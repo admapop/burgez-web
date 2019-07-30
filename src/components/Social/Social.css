@@ -1,0 +1,21 @@
+.rest {
+	padding: 5px 10px;
+	background-color: white;
+	border: 3px solid black;
+	position: fixed;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    font-size: 1rem;
+}
+
+.mobile {
+    padding: 5px 10px;
+	background-color: white;
+	border: 3px solid black;
+    position: fixed;
+    left: 50%;
+    bottom: 2.5rem;
+    transform: translate(-50%);
+    font-size: 0.8rem;
+}
+

@@ -1,4 +1,5 @@
 body {
+    height: 100vh;
     font-family: 'Kanit', sans-serif;
 	font-weight: 800;
     .carousel .slide {
@@ -10,4 +11,7 @@ body {
     }
 }
 
+}
+.carousel .control-dots {
+    padding: 0;
 }

@@ -18,17 +18,17 @@ export default class Navbar extends Component {
                 <ul className="navbar" id="menuu">
                     <li><NavLink exact to="/menu">MENÙ</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
-                    <li><a href="story.html">STORY</a></li>
+                    <li><NavLink exact to="/story">STORY</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
-                    <li><a href="locations.html">LOCATIONS</a></li>
+                    <li><NavLink exact to="locations">LOCATIONS</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
-                    <li><a href="creativity.html">CREATIVITY</a></li>
+                    <li><NavLink exact to="creativity">CREATIVITY</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><NavLink exact to="contact">CONTACT</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
-                    <li><a href="proponici.html">PROPONICI IL TUO IMMOBILE</a></li>
+                    <li><NavLink exact to="proponici">PROPONICI IL TUO IMMOBILE</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
-                    <li><a href="lavora.html">LAVORA CON NOI</a></li>
+                    <li><NavLink exact to="lavora">LAVORA CON NOI</NavLink></li>
                 </ul>
             </nav>
         )
