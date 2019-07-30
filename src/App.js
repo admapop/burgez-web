@@ -13,7 +13,7 @@ import "./App.scss";
 
 setDefaultBreakpoints([
   { mobile: 0 },
-  { tablet: 740 },
+  { tablet: 700 }, //need to play around a bit, previous was 740 but did not work as expected with Galaxy S9
   { desktop: 1024 }
 ])
 
