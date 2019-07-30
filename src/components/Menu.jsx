@@ -8,7 +8,7 @@ export default class Menu extends Component {
     render() {
         return (
             <div>
-                <Carousel emulateTouch showThumbs={false} showStatus={false}>
+                <Carousel emulateTouch showThumbs={false} showStatus={false} autoPlay={true} infiniteLoop={true}>
                     <Breakpoint mobile only>
                         <div id="mobile-container">
                             <div className="ingredients fl w-100">
