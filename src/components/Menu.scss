@@ -24,7 +24,7 @@
         }
     }
 
-    .hamburgez,.cheeseburgez,.smokeburgez,.bigburgez,.chickenburgez,.hotdog,.fries,.drinks,.milkshake {
+    .ingredients,.hamburgez,.cheeseburgez,.smokeburgez,.bigburgez,.chickenburgez,.hotdog,.fries,.drinks,.milkshake {
         color: white;
         background: #e50746;
         border: 1px solid #f29299;
@@ -37,6 +37,11 @@
         }
         #hotdog {
             color: #ffed00;
+        }
+    }
+    .ingredients {
+        p {
+            margin: 0 0 5px 0;
         }
     }
 

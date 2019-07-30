@@ -11,7 +11,11 @@ export default class Menu extends Component {
                 <Carousel emulateTouch showThumbs={false} showStatus={false}>
                     <Breakpoint mobile only>
                         <div id="mobile-container">
-                            <div className="ingredients"><strong>SINGLE:</strong> 100gr. di carne <strong>DOUBLE:</strong> 200gr. di carne <strong>TRIPLE:</strong> 300gr. di carne</div>
+                            <div className="ingredients fl w-100">
+                                <div className="fl w-third"><strong>SINGLE:</strong> <p>100gr. di carne</p></div>
+                                <div className="fl w-third"><strong>DOUBLE:</strong> <p>200gr. di carne</p></div>
+                                <div className="fl w-third"><strong>TRIPLE:</strong> <p>300gr. di carne</p></div>
+                            </div>
                             <div className="hamburgez fl w-100"><strong>HAMBURGEZ</strong></div>
                             <div className="burgers fl w-25">
                                 <span id="top">BUR</span>
