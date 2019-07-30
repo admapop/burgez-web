@@ -61,6 +61,21 @@
     .price1m,.price2m,.price3m,.price4m {
         margin-left: -15px;
     }
+    .price5,.price5m {
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                height: 3rem;
+            }
+        } 
+    }
+
+            #pricechick {
+                font-size: 2rem;
+                align-items: center;
+            }
+
     .hotdog-list {
         ul li {
             margin-left: 1rem;
@@ -102,5 +117,7 @@
         font-size: 1.5rem;
     }
 
-
+#double {
+    margin-right: 5px;
+}
 }

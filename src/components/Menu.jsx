@@ -20,7 +20,7 @@ export default class Menu extends Component {
                             <div className="price1 fl w-25">
                                 <ul>
                                     <li><span>SINGLE</span> <p id="price">5.60</p></li>
-                                    <li><span>DOUBLE</span> <p id="price">7.60</p></li>
+                                    <li><span id="double">DOUBLE</span> <p id="price">7.60</p></li>
                                     <li><span>TRIPLE</span> <p id="price">9.60</p></li>
                                 </ul>
                             </div>
@@ -31,7 +31,7 @@ export default class Menu extends Component {
                             <div className="price1m fl w-25">
                                 <ul>
                                     <li><span>SINGLE</span> <p id="price">11.50</p></li>
-                                    <li><span>DOUBLE</span> <p id="price">13.50</p></li>
+                                    <li><span id="double">DOUBLE</span> <p id="price">13.50</p></li>
                                     <li><span>TRIPLE</span> <p id="price">15.50</p></li>
                                 </ul>
                             </div>
@@ -43,7 +43,7 @@ export default class Menu extends Component {
                             <div className="price2 fl w-25" >
                                 <ul>
                                     <li><span>SINGLE</span> <p id="price">6.10</p></li>
-                                    <li><span>DOUBLE</span> <p id="price">8.10</p></li>
+                                    <li><span id="double">DOUBLE</span> <p id="price">8.10</p></li>
                                     <li><span>TRIPLE</span> <p id="price">10.10</p></li>
                                 </ul>
                             </div>
@@ -54,7 +54,7 @@ export default class Menu extends Component {
                             <div className="price2m fl w-25">
                                 <ul>
                                     <li><span>SINGLE</span> <p id="price">12.00</p></li>
-                                    <li><span>DOUBLE</span> <p id="price">14.00</p></li>
+                                    <li><span id="double">DOUBLE</span> <p id="price">14.00</p></li>
                                     <li><span>TRIPLE</span> <p id="price">16.00</p></li>
                                 </ul>
                             </div>
@@ -66,7 +66,7 @@ export default class Menu extends Component {
                             <div className="price3 fl w-25" >
                                 <ul>
                                     <li><span>SINGLE</span> <p id="price">6.30</p></li>
-                                    <li><span>DOUBLE</span> <p id="price">8.30</p></li>
+                                    <li><span id="double">DOUBLE</span> <p id="price">8.30</p></li>
                                     <li><span>TRIPLE</span> <p id="price">10.30</p></li>
                                 </ul>
                             </div>
@@ -77,7 +77,7 @@ export default class Menu extends Component {
                             <div className="price3m fl w-25">
                                 <ul>
                                     <li><span>SINGLE</span> <p id="price">12.20</p></li>
-                                    <li><span>DOUBLE</span> <p id="price">14.20</p></li>
+                                    <li><span id="double">DOUBLE</span> <p id="price">14.20</p></li>
                                     <li><span>TRIPLE</span> <p id="price">16.20</p></li>
                                 </ul>
                             </div>
@@ -89,7 +89,7 @@ export default class Menu extends Component {
                             <div className="price4 fl w-25" >
                                 <ul>
                                     <li><span>SINGLE</span> <p id="price">6.90</p></li>
-                                    <li><span>DOUBLE</span> <p id="price">8.80</p></li>
+                                    <li><span id="double">DOUBLE</span> <p id="price">8.80</p></li>
                                     <li><span>TRIPLE</span> <p id="price">10.60</p></li>
                                 </ul>
                             </div>
@@ -100,7 +100,7 @@ export default class Menu extends Component {
                             <div className="price4m fl w-25">
                                 <ul>
                                     <li><span>SINGLE</span> <p id="price">12.80</p></li>
-                                    <li><span>DOUBLE</span> <p id="price">14.70</p></li>
+                                    <li><span id="double">DOUBLE</span> <p id="price">14.70</p></li>
                                     <li><span>TRIPLE</span> <p id="price">16.50</p></li>
                                 </ul>
                             </div>
@@ -111,7 +111,7 @@ export default class Menu extends Component {
                             </div>
                             <div className="price5 fl w-25" >
                                 <ul>
-                                    <li><p id="price">6.80</p></li>
+                                    <li><p id="pricechick">6.80</p></li>
                                 </ul>
                             </div>
                             <div className="menu fl w-25">
@@ -120,7 +120,7 @@ export default class Menu extends Component {
                             </div>
                             <div className="price5m fl w-25">
                                 <ul>
-                                    <li><p id="price">12.70</p></li>
+                                    <li><p id="pricechick">12.70</p></li>
                                 </ul>
                             </div>
                             <div className="hotdog fl w-100"><strong id="hotdog">HOZ DOG</strong></div>
