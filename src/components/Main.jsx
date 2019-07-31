@@ -6,7 +6,7 @@ export default class Main extends Component {
     render() {
         return (
             <div>
-                <Carousel emulateTouch showThumbs={false} showStatus={false} autoPlay={true} infiniteLoop={true}>
+                <Carousel emulateTouch showThumbs={false} showStatus={false} autoPlay={true} interval={5000} infiniteLoop={true}>
                     <div>
                         <img src={require("../assets/landing_page.png")} alt="" />
                     </div>

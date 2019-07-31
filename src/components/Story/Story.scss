@@ -1,5 +1,12 @@
-body {
-	overflow: hidden;
+#mobile-scroll {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	overflow-y: auto;
+	@media only screen and (max-height: 400px) and (min-width: 600px) {
+		height: 90vh;
+	}
+
 }
 
 .filler {
@@ -29,6 +36,7 @@ body {
 .text-tablet {
 	overflow-y: scroll;
 	height: calc(60vh - 115px);
+
 	h1 {
 		margin: 0 2rem;
 		font-size: 6vw;

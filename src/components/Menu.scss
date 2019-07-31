@@ -1,5 +1,4 @@
-#mobile-container {
-    overflow-y: scroll;
+#mobile-container,#desktop-container {
     height: 72vh;
     position: relative;
     top: 8rem;
@@ -34,6 +33,11 @@
         text-align: left;
         strong {
             font-size: 6vw;
+        }
+        @media only screen and (min-width: 1024px) {
+            strong {
+                font-size: 3vw;
+            }
         }
         #hotdog {
             color: #ffed00;
@@ -125,4 +129,51 @@
 #double {
     margin-right: 5px;
 }
+}
+
+#mobile-container {
+    overflow-y: scroll;
+}
+
+#desktop-container {
+    #menubox {
+        background: white;
+        border: 1px solid #e50746;
+        h1 {
+            margin: 5px 0 0 0;
+            font-size: 3vw;
+            color: #e50746;
+            height: 2.5vw;
+        }
+        ul li {
+            height: 3rem;
+            font-size: 3vw;
+            text-shadow: 1px 0 0 #ea390d, 0 -1px 0 #ea390d, 0 1px 0 #ea390d, -1px 0 0 #ea390d;
+            &:last-child {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .hotdog-list {
+        ul li {
+            font-size: 2vw;
+            height: 2vw;
+        }
+    }
+    .descrip {
+        ul li {
+            font-size: 1vw;
+            height: 2vw;
+        }
+    }
+    .ingredients {
+        background: #e50746;
+    }
+}
+
+.middle {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    // justify-content: center;
 }

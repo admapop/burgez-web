@@ -3,3 +3,15 @@
     position: fixed;
     z-index: 1;
 }
+
+@media only screen and (max-width: 740px) {
+    .logo a img {
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .logo a img {
+        width: 10rem;
+    }
+}

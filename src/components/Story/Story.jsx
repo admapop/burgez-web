@@ -14,6 +14,7 @@ export default class Story extends Component {
         return (
             <div className="container">
                 <Breakpoint tablet only>
+                    <div id="mobile-scroll">
                     <div>
                         <img style={{ width: "100%" }} src={require("../../assets/burgez-06.png")} alt="" />
                     </div>
@@ -54,6 +55,7 @@ export default class Story extends Component {
                             anni fa non c’erano alcuni degli ingredienti che si usano oggi, ma lo spirito, l’amore e il 100% di
                             quella ricetta con i suoi trucchi e i suoi segreti stanno tutti dentro ad ogni singolo burger di BURGEZ.
 		            	</p>
+                    </div>
                     </div>
                 </Breakpoint>
                 <Breakpoint mobile only>
