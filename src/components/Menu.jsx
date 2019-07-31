@@ -474,7 +474,7 @@ export default class Menu extends Component {
                             </div>
                             <div className="fl w-20">
                                 <div className="middle" id="desktop-container">
-                                    <div className="fl w-80" id="menubox">
+                                    <div className="fl w-70" id="menubox">
                                         <h1>MENÙ</h1>
                                         <ul>
                                             <li>burger</li>
@@ -482,12 +482,12 @@ export default class Menu extends Component {
                                             <li>drink</li>
                                         </ul>
                                     </div>
-                                    <div className="ingredients fl w-100">
-                                        <div className="fl w-100"><strong>SINGLE:</strong> <p>100gr. di carne</p></div>
-                                        <div className="fl w-100"><strong>DOUBLE:</strong> <p>200gr. di carne</p></div>
-                                        <div className="fl w-100"><strong>TRIPLE:</strong> <p>300gr. di carne</p></div>
+                                    <div className="ingredients fl w-70">
+                                        <div className="fl w-100" id="ingr"><strong>SINGLE:</strong> <p>100gr. di carne</p></div>
+                                        <div className="fl w-100" id="ingr"><strong>DOUBLE:</strong> <p>200gr. di carne</p></div>
+                                        <div className="fl w-100" id="ingr"><strong>TRIPLE:</strong> <p>300gr. di carne</p></div>
                                     </div>
-                                    <div className="fl w-100">
+                                    <div className="fl w-70" id="menubox">
                                         <p>Se scegli il single non ti lamentare se poi è piccolo. Le misure contano. "Sigmund Freud"</p>
                                     </div>
                                 </div>

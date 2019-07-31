@@ -153,6 +153,12 @@
                 margin-bottom: 5px;
             }
         }
+        p {
+            font-size: 1.5vw;
+            margin: 0;
+            padding: 10px;
+            color: #e50746;
+        }
     }
     .hotdog-list {
         ul li {
@@ -176,4 +182,21 @@
     flex-flow: column;
     align-items: center;
     // justify-content: center;
+    .ingredients {
+        display: flex;
+        flex-flow: column;
+        #ingr {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            p {
+                font-size: 1.5vw;
+            }
+            @media only screen and (min-width: 1024px) {
+                strong {
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
 }
