@@ -133,6 +133,10 @@
 
 #mobile-container {
     overflow-y: scroll;
+    @media only screen and (min-width: 700px) and (max-height: 400px) {
+        top: 5rem;
+        height: 58vh;
+    }
 }
 
 #desktop-container {
