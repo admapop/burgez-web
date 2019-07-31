@@ -180,7 +180,7 @@ export default class Menu extends Component {
                                 <div className="milkshake-list fl w-80">
                                     <p>FRAGOLA-VANIGLIA-CIOCCOLATO-BANANA-AMARENA-CARAMELLO SALATO-OREO</p>
                                 </div>
-                                <div className="fl w-20"><p id="milkprice">5.00</p></div>
+                                <div className="fl w-15" id="milkprice"><p>5.00</p></div>
                             </div>
                         </Breakpoint>
                         <Breakpoint tablet only>
@@ -330,8 +330,8 @@ export default class Menu extends Component {
                                 </div>
                                 <div className="fl w-30">
                                     <ul>
-                                        <li>3.00</li>
-                                        <li>4.00</li>
+                                        <li id="price">3.00</li>
+                                        <li id="price">4.00</li>
                                     </ul>
                                 </div>
                                 <div className="drinks fl w-100"><strong>DRINKS</strong></div>
@@ -344,16 +344,17 @@ export default class Menu extends Component {
                                 </div>
                                 <div className="fl w-30">
                                     <ul>
-                                        <li>3.00</li>
-                                        <li>3.50</li>
-                                        <li>1.50</li>
+                                        <li id="price">3.00</li>
+                                        <li id="price">3.50</li>
+                                        <li id="price">1.50</li>
                                     </ul>
                                 </div>
                                 <div className="milkshake fl w-100"><strong>MILKSHAKE</strong></div>
                                 <div className="milkshake-list fl w-80">
                                     <p>FRAGOLA-VANIGLIA-CIOCCOLATO-BANANA-AMARENA-CARAMELLO SALATO-OREO</p>
                                 </div>
-                                <div className="fl w-20"><p id="milkprice">5.00</p></div>
+                                {/* <div className="fl w-5"><p>s</p></div> */}
+                                <div className="fl w-15" id="milkprice"><p>5.00</p></div>
                             </div>
                         </Breakpoint>
                         <Breakpoint desktop only>
@@ -521,10 +522,10 @@ export default class Menu extends Component {
                                             <li>CHEESEFRIES</li>
                                         </ul>
                                     </div>
-                                    <div className="fl w-30">
+                                    <div className="fl w-30" id="desk-price">
                                         <ul>
-                                            <li>3.00</li>
-                                            <li>4.00</li>
+                                            <li id="price">3.00</li>
+                                            <li id="price">4.00</li>
                                         </ul>
                                     </div>
                                     <div className="drinks fl w-100"><strong>DRINKS</strong></div>
@@ -535,18 +536,18 @@ export default class Menu extends Component {
                                             <li>ACQUA</li>
                                         </ul>
                                     </div>
-                                    <div className="fl w-30">
+                                    <div className="fl w-30" id="desk-price">
                                         <ul>
-                                            <li>3.00</li>
-                                            <li>3.50</li>
-                                            <li>1.50</li>
+                                            <li id="price">3.00</li>
+                                            <li id="price">3.50</li>
+                                            <li id="price">1.50</li>
                                         </ul>
                                     </div>
                                     <div className="milkshake fl w-100"><strong>MILKSHAKE</strong></div>
                                     <div className="milkshake-list fl w-80">
                                         <p>FRAGOLA-VANIGLIA-CIOCCOLATO-BANANA-AMARENA-CARAMELLO SALATO-OREO</p>
                                     </div>
-                                    <div className="fl w-20"><p id="milkprice">5.00</p></div>
+                                    <div className="fl w-15" id="milkprice"><p>5.00</p></div>
                                 </div>
                             </div>
                         </Breakpoint>
