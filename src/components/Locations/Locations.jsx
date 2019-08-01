@@ -234,7 +234,7 @@ export default class Locations extends Component {
                         </ul>
                         <ul>
                             <li id="title">CORSO COMO 2</li>
-                            <li>Apriamo a Settembre</li>
+                            <li>Apriamo a Ottobre</li>
                             {/* <iframe class="modal" id="iframe6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.4340398893505!2d9.185143815961318!3d45.48120367910125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c13490d3f921%3A0xa4890ac82b365745!2sCorso+Como%2C+2%2C+20154+Milano+MI!5e0!3m2!1sit!2sit!4v1564393459600!5m2!1sit!2sit" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> */}
                             <a href="#iframe6" rel="modal:open">VIEW ON MAPS</a>
                         </ul>

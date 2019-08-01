@@ -36,6 +36,7 @@
 }
 .text-tablet {
 	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 	height: calc(60vh - 115px);
 
 	h1 {
