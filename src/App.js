@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Navbar from './components/Navbar/Navbar'
 import Logo from './components/Logo/Logo';
 import { Route, Switch } from 'react-router-dom';
@@ -10,6 +10,7 @@ import Story from './components/Story/Story';
 import Social from './components/Social/Social';
 import Locations from './components/Locations/Locations';
 import "./App.scss";
+import Sidebar from './components/Navbar/Sidebar';
 
 setDefaultBreakpoints([
   { mobile: 0 },
@@ -17,13 +18,19 @@ setDefaultBreakpoints([
   { desktop: 1024 }
 ])
 
-function App() {
+class App extends Component {
+  componentDidMount() {
+    // const app = document.querySelector('.carousel');
+    window.addEventListener("load", () => window.scrollBy(0, 10));
+  }
+  render() {
   return (
-    <div className="App" style={{position:"fixed"}}>
+    <div className="App" style={{position:"fixed"}} id="App">
       <BreakpointProvider>
       <Logo/>
       <Navbar/>
-
+      <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+    <div id="page-wrap">
     <Switch>
       <Route exact path="/" component={Main} />
       <Route exact path="/menu" component={Menu} />
@@ -32,9 +39,11 @@ function App() {
 
     </Switch>
       <Social/>
+      </div>
     </BreakpointProvider>
     </div>
   );
+}
 }
 
 export default App;

@@ -3,6 +3,9 @@ import { Carousel } from 'react-responsive-carousel';
 import '../../node_modules/react-responsive-carousel/lib/styles/carousel.css';
 
 export default class Main extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 50);
+    }
     render() {
         return (
             <div>
