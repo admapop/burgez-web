@@ -61,7 +61,7 @@ export default class Menu extends Component {
                 <Carousel ref={this.carousel} emulateTouch showThumbs={false} showStatus={false} interval={5000} dynamicHeight={false} showIndicators={false} transitionTime={400} >
                     <div className="container">
                         <Breakpoint tablet only>
-                            <div id="mobile-container">
+                            <div id="mobile-container" style={{height: "80vh"}}>
                                 <div className="ingredients fl w-100">
                                     <div className="fl w-third"><strong>SINGLE:</strong> <p>100gr. di carne</p></div>
                                     <div className="fl w-third"><strong>DOUBLE:</strong> <p>200gr. di carne</p></div>
