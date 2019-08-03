@@ -9,11 +9,14 @@ import Menu from './components/Menu.jsx';
 import Story from './components/Story/Story';
 import Social from './components/Social/Social';
 import Locations from './components/Locations/Locations';
-import "./App.scss";
+import Contact from './components/Contact/Contact';
+
 import Sidebar from './components/Navbar/Sidebar';
+import "./App.scss";
 
 setDefaultBreakpoints([
   { mobile: 0 },
+  { xlmobile: 360},
   { tablet: 700 }, //need to play around a bit, previous was 740 but did not work as expected with Galaxy S9
   { desktop: 1024 }
 ])
@@ -29,13 +32,14 @@ class App extends Component {
       <BreakpointProvider>
       <Logo/>
       <Navbar/>
-      <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+      <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} isOpen={false}/>
     <div id="page-wrap">
     <Switch>
       <Route exact path="/" component={Main} />
       <Route exact path="/menu" component={Menu} />
       <Route exact path="/story" component={Story} />
       <Route exact path="/locations" component={Locations} />
+      <Route exact path="/contact" component={Contact} />
 
     </Switch>
       <Social/>

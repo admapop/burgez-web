@@ -1,0 +1,24 @@
+.wrapper {
+margin-top: 10rem;
+
+#name,#email,#subject,#message, textarea {
+    background-color: #3ae5fd;
+    width: 90vw;
+}
+textarea {
+    height: 20vh;
+}
+label {
+    margin-top: 1rem;
+}
+
+#submit {
+    background-color: transparent;
+    color: black;
+    border: unset;
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+    margin-right: -5rem;
+}
+}

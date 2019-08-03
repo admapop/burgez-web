@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Breakpoint } from 'react-socks';
-import './Locations.scss'
 import 'tachyons';
+import './Locations.scss'
 
 const mobile = {
     height: "70vh",

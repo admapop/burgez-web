@@ -1,5 +1,6 @@
 #mobile-container,#desktop-container {
-    height: 72vh;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     position: relative;
     top: 8rem;
     @media only screen and (max-height:820px) {

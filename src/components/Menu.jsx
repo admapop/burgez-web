@@ -3,12 +3,62 @@ import { Carousel } from 'react-responsive-carousel';
 import { Breakpoint } from 'react-socks';
 import 'tachyons';
 import './Menu.scss'
+import MenuContent from './MenuContent/MenuContent'
+import MenuContent2 from './MenuContent/MenuContent2';
 
 export default class Menu extends Component {
+    constructor(props) {
+        super(props);
+        this.carousel = React.createRef();
+        this.state = {
+            reloaded: false
+        }
+    }
+
+      componentDidMount() {
+        if(!this.state.reloaded) {
+            this.setState({reloaded: true});
+            this.carousel.current.setState({
+                itemSize: this.carousel.current.itemsRef[0].clientHeight,
+                wrapperSize: this.carousel.current.itemsRef[0].clientHeight
+            })
+            console.log(this.carousel.current.state.itemSize)        
+        }
+        return;
+      }
+    
     render() {
         return (
             <div>
-                <Carousel emulateTouch showThumbs={false} showStatus={false} interval={5000}>
+                <Breakpoint xlmobile down>
+                <Carousel ref={this.carousel} emulateTouch selectedItem={0} showArrows={false} showThumbs={false} showStatus={false} interval={5000} axis={"vertical"} showIndicators={false} transitionTime={400}>
+                    <MenuContent />
+                    <MenuContent2/>
+                    <div>
+                        <img src={require("../assets/Menu/burgez-10.png")} alt="" />
+                    </div>
+                    <div>
+                        <img src={require("../assets/Menu/burgez-11.png")} alt="" />
+                    </div>
+                    <div>
+                        <img src={require("../assets/Menu/burgez-12.png")} alt="" />
+                    </div>
+                    <div>
+                        <img src={require("../assets/Menu/burgez-13.png")} alt="" />
+                    </div>
+                    <div>
+                        <img src={require("../assets/Menu/burgez-14.png")} alt="" />
+                    </div>
+                    <div>
+                        <img src={require("../assets/Menu/burgez-15.png")} alt="" />
+                    </div>
+                    <div>
+                        <img src={require("../assets/Menu/burgez-16.png")} alt="" />
+                    </div>
+                </Carousel>
+                </Breakpoint>
+                <Breakpoint tablet up>
+                <Carousel emulateTouch showThumbs={false} showStatus={false} interval={5000} dynamicHeight={false} showIndicators={false} transitionTime={400} >
                     <div className="container">
                         <Breakpoint mobile only>
                             <div id="mobile-container">
@@ -574,6 +624,8 @@ export default class Menu extends Component {
                         <img src={require("../assets/Menu/burgez-16.png")} alt="" />
                     </div>
                 </Carousel>
+                </Breakpoint>
+
             </div>
         )
     }
