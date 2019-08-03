@@ -103,25 +103,6 @@ export default class MenuContent extends Component {
                                 <li><span>TRIPLE</span> <p id="price">16.50</p></li>
                             </ul>
                         </div>
-                        <div className="chickenburgez fl w-100"><strong>CHICKENBURGEZ</strong></div>
-                        <div className="burgers fl w-25">
-                            <span id="top">BUR</span>
-                            <span>GERS</span>
-                        </div>
-                        <div className="price5 fl w-25" >
-                            <ul>
-                                <li><p id="pricechick">6.80</p></li>
-                            </ul>
-                        </div>
-                        <div className="menu fl w-25">
-                            <span id="top2">ME</span>
-                            <span id="nu">NÙ</span>
-                        </div>
-                        <div className="price5m fl w-25">
-                            <ul>
-                                <li><p id="pricechick">12.70</p></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
 

@@ -4,6 +4,7 @@ import 'tachyons';
 import './Locations.scss'
 
 const mobile = {
+    marginTop: "5rem",
     height: "70vh",
     overflowY: "scroll"
 }
@@ -18,7 +19,7 @@ export default class Locations extends Component {
         return (
             <div className="container">
                 <img id="milano" src={require("../../assets/burgez-07.png")} alt="" />
-                <Breakpoint mobile only>
+                <Breakpoint xlmobile down>
                     <div className="list" style={mobile}>
                         <ul>
                             <li id="title">VIA SAVONA 15</li>
