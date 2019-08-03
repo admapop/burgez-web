@@ -5,7 +5,7 @@ import './Story.scss'
 const mobileStyle = {
     position: 'relative',
     right: '25vw',
-    top: '10rem',
+    top: '6rem',
     width: '100%'
 }
 
@@ -58,7 +58,7 @@ export default class Story extends Component {
                     </div>
                     </div>
                 </Breakpoint>
-                <Breakpoint mobile only>
+                <Breakpoint xlmobile down>
                     <div>
                         <img style={mobileStyle} src={require("../../assets/burgez-06.png")} alt="" />
                     </div>

@@ -6,7 +6,7 @@ export default class Social extends Component {
     render() {
         return (
             <div>
-            <Breakpoint mobile only>
+            <Breakpoint xlmobile down>
                 <footer className="mobile">
                     <a href="https://www.instagram.com/instaburgez/" target="_blank">INSTAGRAM</a> / <a href="https://it-it.facebook.com/burgezmi/" target="_blank">FACEBOOK</a>
                 </footer>

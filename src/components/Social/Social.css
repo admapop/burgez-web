@@ -14,7 +14,7 @@
 	border: 3px solid black;
     position: fixed;
     left: 50%;
-    bottom: 2.5rem;
+    bottom: 1rem;
     transform: translate(-50%);
     font-size: 0.8rem;
 }
