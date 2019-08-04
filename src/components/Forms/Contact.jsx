@@ -44,8 +44,6 @@ export default class Contact extends Component {
                                 <textarea className="w-100 bn pv2" type="text" name="message" id="message" value={this.state.value} onChange={this.handleChange} />
                             </div>
                             <div><input className="fr" type="submit" value="INVIA" id="submit" /></div>
-
-
                         </form>
                     </div>
                 </Breakpoint>
@@ -74,7 +72,6 @@ export default class Contact extends Component {
 
                         </form>
                     </div>
-
                 </Breakpoint>
             </div>
         )

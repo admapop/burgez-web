@@ -1,0 +1,75 @@
+label {
+    margin-top: 1rem;
+}
+#name,#tel,#email,#type,#address,#civico,#cap,#city,#tot_affitto,#surface,#vetrine,#message, textarea {
+    background-color: #3ae5fd;
+    width: 45vw;
+    @media only screen and (max-width: 820px) {
+        width: 100vw;
+    }
+}
+
+#message {
+    height: 7vw;
+}
+#next {
+    height: 8vw;
+    width: auto;
+    margin-left: auto;
+    font-size: 10rem;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    top: 7.5rem;
+    &:hover{
+        color: black;
+    }
+    @media only screen and (max-width: 820px) {
+        font-size: 5rem;
+    }
+}
+
+#submit {
+    cursor: pointer;
+    background-color: transparent;
+	color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    border: unset;
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+    margin-right: 3.5vw;
+    &:hover {
+        color: black;
+    }
+    // @media only screen and (max-width: 1024px) {
+    //     margin-right: 2rem;
+    // }
+}
+
+
+form {
+    // margin-top: 2rem;
+    @media only screen and (max-height: 820px) {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 58vh;
+    }
+}
+
+.radio-b {
+    font-weight: 400;
+    font-size: 1.5rem;
+    @media only screen and (max-height: 820px) {
+        font-size: 1rem;
+    }
+}
+
+.page2 {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    div {
+        margin-left: 3rem;
+    }
+}
