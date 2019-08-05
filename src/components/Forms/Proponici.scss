@@ -1,3 +1,23 @@
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    height: 22vw;
+    width: 100vw;
+}
+
+.container-proponici {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    @media only screen and (max-width: 800px) {
+        height: 90vh;
+        @media only screen and (max-height: 800px) {
+            height: 85vh;
+        }
+    }
+
+
 label {
     margin-top: 1rem;
 }
@@ -51,9 +71,9 @@ label {
 form {
     // margin-top: 2rem;
     @media only screen and (max-height: 820px) {
-        overflow-y: scroll;
-        overflow-x: hidden;
-        height: 58vh;
+        // overflow-y: scroll;
+        // overflow-x: hidden;
+        // height: 58vh;
     }
 }
 
@@ -72,4 +92,6 @@ form {
     div {
         margin-left: 3rem;
     }
+}
+
 }

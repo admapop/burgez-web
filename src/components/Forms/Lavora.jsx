@@ -40,16 +40,16 @@ export default class Lavora extends Component {
                             </div>
                             <p>Sì proprio grazie alla tua simpatia e alla tua educazione.
                             Il 33,3% periodico della riuscita di <strong>BURGEZ</strong> è rappresentata dalla
-                                customer experience e, comunque, al di là dei numeri,
-                                il capitale umano spesso rappresenta il 100% della riuscita di un
-                                progetto di retail sales. Non c'è nulla di più bello di essere coccolati
-                                e trattati come esseri umani.
+                                    customer experience e, comunque, al di là dei numeri,
+                                    il capitale umano spesso rappresenta il 100% della riuscita di un
+                                    progetto di retail sales. Non c'è nulla di più bello di essere coccolati
+                                    e trattati come esseri umani.
                             </p>
                             <p><strong>BURGEZ</strong> non cerca ragazzi con esperienza ma ragazzi simpatici,
                             educati, gentili e sempre con il sorriso. L'esperienza si construisce,
                             la gentilezza e la simpatia no. A <strong>BURGEZ</strong> interessano i ragazzi
-                                più simpatici e gentili del mondo e se pensi di essere una o
-                                uno di loro non esitare a scriverci e a farti conoscere.
+                                    più simpatici e gentili del mondo e se pensi di essere una o
+                                    uno di loro non esitare a scriverci e a farti conoscere.
                             </p>
                         </div>
                         <div className="fl w-40" style={{ overflow: "hidden" }} id="contactform">
@@ -79,6 +79,9 @@ export default class Lavora extends Component {
                     </div>
                 </Breakpoint>
                 <Breakpoint tablet down>
+                    <Breakpoint xlmobile down>
+                    <div className="topbar"></div>
+                    </Breakpoint>
                     <div className="main" id="text_portrait">
                         <p>Vuoi essere una o uno dello staff di <strong>BURGEZ</strong>?
                         Ti piacerebbe avere uno stipendio e divertirti mentre lavori?
