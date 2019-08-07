@@ -10,7 +10,7 @@
 .container-lavora {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 900px) {
         height: 90vh;
         @media only screen and (max-height: 800px) {
             height: 85vh;
@@ -42,9 +42,15 @@
     .mobile-landscape {
         overflow-y: auto;
         height: 90vh;
+        div:first-of-type {
+        @media only screen and (min-width: 900px) {
+            padding-right: 1vw;
+        }
+    }
     }
     #tablet-down {
             margin-top: unset;
+            overflow: unset;
     }
     
 }
