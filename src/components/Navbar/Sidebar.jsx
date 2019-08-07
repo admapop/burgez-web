@@ -3,6 +3,7 @@ import { slide as Menu } from 'react-burger-menu';
 import { NavLink } from 'react-router-dom'
 import './reactmenu.css'
 import { Breakpoint } from 'react-socks';
+import Logo from '../Logo/Logo';
 
 export default class Sidebar extends Component {
     constructor (props) {
@@ -31,6 +32,7 @@ export default class Sidebar extends Component {
     render() {
         return (
             <Breakpoint tablet down>
+                  <Logo />
             <Menu {...this.props}
             isOpen={this.state.menuOpen}
             onStateChange={(state) => this.handleStateChange(state)}
