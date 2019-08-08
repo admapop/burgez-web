@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Carousel } from 'react-responsive-carousel';
 import '../../node_modules/react-responsive-carousel/lib/styles/carousel.css';
+import './Main.scss'
 import { Breakpoint } from 'react-socks';
 
 export default class Main extends Component {
@@ -30,7 +31,7 @@ export default class Main extends Component {
                     </Carousel>
                 </Breakpoint>
                 <Breakpoint tablet up>
-                    <Carousel emulateTouch showThumbs={false} showStatus={false} autoPlay={true} interval={5000} infiniteLoop={true} showIndicators={false} >
+                    <Carousel emulateTouch showThumbs={false} showStatus={false} autoPlay={true} interval={5000} infiniteLoop={true} showIndicators={false} stopOnHover={false}>
                         <div>
                             <img src={require("../assets/landing_page.png")} alt="" />
                         </div>
