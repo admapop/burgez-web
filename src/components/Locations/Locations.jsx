@@ -5,8 +5,8 @@ import './Locations.scss'
 
 const mobile = {
     marginTop: "5rem",
-    height: "70vh",
-    overflowY: "scroll"
+    // height: "70vh",
+    // overflowY: "scroll"
 }
 
 const tablet = {
@@ -93,6 +93,7 @@ export default class Locations extends Component {
                             <li>SOON</li>
                         </ul>
                     </div>
+                    {/* <div className="botbar"></div> */}
                 </Breakpoint>
                 <Breakpoint tablet only>
                     <div id="mobile-scroll">
