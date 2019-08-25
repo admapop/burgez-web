@@ -29,7 +29,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App" style={{ position: "fixed" }} id="App">
+      <div className="App" id="App">
         <BreakpointProvider>
         <Breakpoint desktop only>         
           <Logo />

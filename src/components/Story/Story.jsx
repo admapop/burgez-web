@@ -59,6 +59,8 @@ export default class Story extends Component {
                     </div>
                 </Breakpoint>
                 <Breakpoint xlmobile down>
+                    <div className="topbar"></div>
+
                     <div>
                         <img style={mobileStyle} src={require("../../assets/burgez-06.png")} alt="" />
                     </div>
@@ -100,6 +102,7 @@ export default class Story extends Component {
                             quella ricetta con i suoi trucchi e i suoi segreti stanno tutti dentro ad ogni singolo burger di BURGEZ.
 		            	</p>
                     </div>
+                    <div className="botbar"></div>
                     {/* <div className="filler"></div> */}
                 </Breakpoint>
                 <Breakpoint desktop up>

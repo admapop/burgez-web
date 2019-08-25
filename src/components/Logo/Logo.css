@@ -1,6 +1,7 @@
 .logo a img {
     width: 15rem;
     position: fixed;
+    top: 0;
     z-index: 2;
 }
 

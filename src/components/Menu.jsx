@@ -31,7 +31,7 @@ export default class Menu extends Component {
         return (
             <div>
                 <Breakpoint xlmobile down>
-                <Carousel ref={this.carousel} emulateTouch selectedItem={0} showArrows={false} showThumbs={false} showStatus={false} interval={5000} axis={"vertical"} showIndicators={false} transitionTime={400}>
+                <Carousel ref={this.carousel} emulateTouch selectedItem={0} showArrows={false} showThumbs={false} infiniteLoop={true} showStatus={false} interval={5000} axis={"vertical"} showIndicators={false} transitionTime={400}>
                     <MenuContent />
                     <MenuContent2/>
                     <div>
