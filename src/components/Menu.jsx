@@ -35,25 +35,25 @@ export default class Menu extends Component {
                     <MenuContent />
                     <MenuContent2/>
                     <div>
-                        <img src={require("../assets/Menu/burgez-10.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Hamburger.png")} alt="" />
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-11.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Cheeseburger_.png")} alt="" />
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-12.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Smoke_Burger.png")} alt="" />
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-13.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Double_Big_Burger.png")} alt="" />
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-14.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Triple_Big_Burger.png")} alt="" />
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-15.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Chicken_Burger.png")} alt="" />
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-16.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Double_Cheeseburger.png")} alt="" />
                     </div>
                 </Carousel>
                 </Breakpoint>
@@ -430,25 +430,60 @@ export default class Menu extends Component {
                         </Breakpoint>
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-10.png")} alt="" />
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Hamburger.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
+                            <img src={require("../assets/Menu/burgez-10_2.png")} alt="" />
+                        </Breakpoint>
                     </div>
                     <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Cheeseburger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
                         <img src={require("../assets/Menu/burgez-11.png")} alt="" />
+                        </Breakpoint>
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-12.png")} alt="" />
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Smoke_Burger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
+                        <img src={require("../assets/Menu/burgez-12.png")} alt="" />                            
+                        </Breakpoint>
                     </div>
                     <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Big_Burger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
                         <img src={require("../assets/Menu/burgez-13.png")} alt="" />
+                        </Breakpoint>
                     </div>
                     <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Triple_Big_Burger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
                         <img src={require("../assets/Menu/burgez-14.png")} alt="" />
+                        </Breakpoint>
                     </div>
                     <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Chicken_Burger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
                         <img src={require("../assets/Menu/burgez-15.png")} alt="" />
+                        </Breakpoint>
                     </div>
                     <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Double_Cheeseburger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
                         <img src={require("../assets/Menu/burgez-16.png")} alt="" />
+                        </Breakpoint>
                     </div>
                 </Carousel>
                 </Breakpoint>

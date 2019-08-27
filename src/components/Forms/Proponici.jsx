@@ -215,7 +215,7 @@ export default class Proponici extends Component {
                                 <input className="w-100 bn pv2 " type="text" name="cap" id="cap" />
                             </div>
                             <div className="" style={tablet}>
-                                <label htmlFor="city" className="fl w-90 f2 fw4 b db mb2 ">CITTà</label>
+                                <label htmlFor="city" className="fl w-90 f2 fw4 b db mb2 ">CITTÀ</label>
                                 <input className="w-100 bn pv2 " type="text" name="city" id="city" />
                             </div>
                         </div>
@@ -255,7 +255,7 @@ export default class Proponici extends Component {
                             </div>
                             <div className="" style={tablet}>
                                 <label htmlFor="file" className="fl w-90 f2 fw4 b db mb2 ">DESIDERA INVIARE PLANIMETRIE O PDF?</label>
-                                <input className="" type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" />
+                                <input className="file" type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" />
                             </div>
 
 
