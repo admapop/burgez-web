@@ -1,4 +1,17 @@
 .container {
+    .header {
+        margin-top: 15rem;
+        h1 {
+            writing-mode: tb-rl;
+            transform: rotate(-180deg);
+            font-size: 8vw;
+            font-style: italic;
+            font-weight: 800;
+            color: white;
+            margin: 0;
+        }
+        
+    }
     .botbar {
         position: fixed;
         bottom: 0;
@@ -27,8 +40,8 @@
 
 
     .list {
-        margin-top: 8rem;
-        padding-bottom: 5rem;
+        margin-top: 7rem;
+        // padding-bottom: 5rem;
         #title {
             margin:0;
             font-size: 6vw;

@@ -176,7 +176,8 @@ export default class Locations extends Component {
 
                 </Breakpoint>
                 <Breakpoint desktop>
-                    <div className="list fl w-50">
+                    <div className="header fl w-10"><h1>MILANO</h1></div>
+                    <div className="list fl w-40">
                         <ul>
                             <li id="title">VIA SAVONA 15</li>
                             <li>Zona Tortona. Metro Verde Sant'Agostino o Porta Genova.</li>
@@ -215,7 +216,7 @@ export default class Locations extends Component {
                             <a href="#iframe3" rel="modal:open">VIEW ON MAPS</a>
                         </ul>
                     </div>
-                    <div className="list fl w-50">
+                    <div className="list fl w-40">
                         <ul>
                             <li id="title">VIA CARMAGNOLA 8</li>
                             <li>Zona Isola. Metro Verde Garibaldi, Metro Lilla Isola.</li>
