@@ -22,15 +22,7 @@ export default class Main extends Component {
                             <Arrow />
                         </div>
                         <div>
-                            {/* <img src={require("../assets/image_background.png")} alt="" /> */}
                             <img src={require("../assets/Locali.png")} alt="" />
-
-                        </div>
-                        <div>
-                            <img src={require("../assets/image_background2.png")} alt="" />
-                        </div>
-                        <div>
-                            <img src={require("../assets/image_background3.png")} alt="" />
                         </div>
                         <div>
                             <img src={require("../assets/image_background4v2.png")} alt="" />

@@ -4,7 +4,7 @@ import 'tachyons';
 import './Locations.scss'
 
 const mobile = {
-    marginTop: "5rem",
+    marginTop: "6rem",
     // height: "70vh",
     // overflowY: "scroll"
 }

@@ -38,7 +38,7 @@ export default class Menu extends Component {
                         <img src={require("../assets/Menu/Mobile/Hamburger.png")} alt="" />
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/Mobile/Cheeseburger_.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Cheeseburger.png")} alt="" />
                     </div>
                     <div>
                         <img src={require("../assets/Menu/Mobile/Smoke_Burger.png")} alt="" />

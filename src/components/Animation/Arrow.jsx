@@ -14,7 +14,7 @@ const style = {
     borderRight: "20px solid transparent",
     borderTop: "20px solid #f00",
     position: "absolute",
-    bottom: "7rem",
+    bottom: "4rem",
     left: "45vw"
 }
 
