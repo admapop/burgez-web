@@ -41,7 +41,9 @@
 
     .list {
         margin-top: 7rem;
-        // padding-bottom: 5rem;
+        @media only screen and (max-width:820px) and (max-height:900px) {
+        padding-bottom: 5rem;
+        }
         #title {
             margin:0;
             font-size: 6vw;

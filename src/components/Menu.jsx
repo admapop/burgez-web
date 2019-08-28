@@ -15,25 +15,25 @@ export default class Menu extends Component {
         }
     }
 
-      componentDidMount() {
-        if(!this.state.reloaded) {
-            this.setState({reloaded: true});
-            this.carousel.current.setState({
-                itemSize: this.carousel.current.itemsRef[0].clientHeight,
-                wrapperSize: this.carousel.current.itemsRef[0].clientHeight
-            })
-            console.log(this.carousel.current.state.itemSize)        
-        }
-        return;
-      }
+    //   componentDidMount() {
+    //     if(!this.state.reloaded) {
+    //         this.setState({reloaded: true});
+    //         this.carousel.current.setState({
+    //             itemSize: this.carousel.current.itemsRef[0].clientHeight,
+    //             wrapperSize: this.carousel.current.itemsRef[0].clientHeight
+    //         })
+    //         console.log(this.carousel.current.state.itemSize)        
+    //     }
+    //     return;
+    //   }
     
     render() {
         return (
             <div>
                 <Breakpoint xlmobile down>
-                <Carousel ref={this.carousel} emulateTouch selectedItem={0} showArrows={false} showThumbs={false} infiniteLoop={true} showStatus={false} interval={5000} axis={"vertical"} showIndicators={false} transitionTime={400}>
+                    <div style={{background: "#3ae5fd"}}>
                     <MenuContent />
-                    <MenuContent2/>
+                    {/* <MenuContent2/> */}
                     <div>
                         <img src={require("../assets/Menu/Mobile/Hamburger.png")} alt="" />
                     </div>
@@ -55,7 +55,7 @@ export default class Menu extends Component {
                     <div>
                         <img src={require("../assets/Menu/Mobile/Double_Cheeseburger.png")} alt="" />
                     </div>
-                </Carousel>
+                    </div>
                 </Breakpoint>
                 <Breakpoint tablet up>
                 <Carousel ref={this.carousel} emulateTouch showThumbs={false} showStatus={false} interval={5000} dynamicHeight={false} showIndicators={false} transitionTime={400} >
