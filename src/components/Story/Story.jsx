@@ -7,7 +7,7 @@ import Logo from '../Logo/Logo'
 const mobileStyle = {
     position: 'relative',
     right: '25vw',
-    top: '6rem',
+    top: '1rem',
     width: '100%'
 }
 

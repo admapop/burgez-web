@@ -6,7 +6,7 @@ import Headroom from 'react-headroom'
 import Logo from '../Logo/Logo'
 
 const mobile = {
-    marginTop: "6rem",
+    marginTop: "1rem",
     // height: "70vh",
     // overflowY: "scroll"
 }
