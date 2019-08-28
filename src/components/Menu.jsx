@@ -33,7 +33,7 @@ export default class Menu extends Component {
                 <Breakpoint xlmobile down>
                     <div style={{background: "#3ae5fd"}}>
                     <MenuContent />
-                    {/* <MenuContent2/> */}
+                    <div style={{lineHeight: "0"}}>
                     <div>
                         <img src={require("../assets/Menu/Mobile/Hamburger.png")} alt="" />
                     </div>
@@ -54,6 +54,7 @@ export default class Menu extends Component {
                     </div>
                     <div>
                         <img src={require("../assets/Menu/Mobile/Double_Cheeseburger.png")} alt="" />
+                    </div>
                     </div>
                     </div>
                 </Breakpoint>
