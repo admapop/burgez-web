@@ -62,10 +62,12 @@ export default class Menu extends Component {
                     </div>
                     </div>
                 </Breakpoint>
-                <Breakpoint tablet only>
-                <Headroom wrapperStyle={{background: "#3ae5fd"}}>
-                    <Logo />
-                </Headroom>
+                <Breakpoint tablet up>
+                    <Breakpoint>
+                        <Headroom wrapperStyle={{background: "#3ae5fd"}}>
+                            <Logo />
+                        </Headroom>
+                    </Breakpoint>
                 <Carousel ref={this.carousel} emulateTouch showThumbs={false} showStatus={false} interval={5000} dynamicHeight={false} showIndicators={false} transitionTime={400} >
                     <div className="container">
                         <Breakpoint tablet only>
