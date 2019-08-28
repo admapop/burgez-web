@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Carousel } from 'react-responsive-carousel';
 import '../../node_modules/react-responsive-carousel/lib/styles/carousel.css';
+import LogoMain from './Logo/LogoMain'
 import './Main.scss'
 import { Breakpoint } from 'react-socks';
 import Arrow from './Animation/Arrow';
@@ -13,6 +14,7 @@ export default class Main extends Component {
         return (
             <div>
                 <Breakpoint xlmobile down>
+                <LogoMain />
                     <Carousel emulateTouch showArrows={false} showThumbs={false} showStatus={false} autoPlay={true} interval={5000} infiniteLoop={true} axis={"vertical"} dynamicHeight={true} showIndicators={false} >
                         <div>
                             <img src={require("../assets/Landing_Page_new.png")} alt="" />
@@ -30,6 +32,9 @@ export default class Main extends Component {
                     </Carousel>
                 </Breakpoint>
                 <Breakpoint tablet up>
+                    <Breakpoint tablet only>
+                    <LogoMain />
+                    </Breakpoint>
                     <Carousel emulateTouch showThumbs={false} showStatus={false} autoPlay={true} interval={5000} infiniteLoop={true} showIndicators={false} stopOnHover={false}>
                         <div>
                             <img src={require("../assets/Landing_Page_new.png")} alt="" />

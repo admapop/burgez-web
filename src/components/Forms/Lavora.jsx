@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
 import { Breakpoint } from 'react-socks';
+import Headroom from 'react-headroom'
+import Logo from '../Logo/Logo';
 
 import './Lavora.scss'
-
-const size = {
-    overflowY: "scroll",
-    height: window.innerWidth > 800 ? "unset" : "90vh"
-}
 
 export default class Lavora extends Component {
     constructor(props) {
@@ -79,9 +76,9 @@ export default class Lavora extends Component {
                     </div>
                 </Breakpoint>
                 <Breakpoint tablet down>
-                    <Breakpoint xlmobile down>
-                    <div className="topbar"></div>
-                    </Breakpoint>
+                <Headroom>
+                    <Logo />
+                </Headroom>
                     <div className="main" id="text_portrait">
                         <p>Vuoi essere una o uno dello staff di <strong>BURGEZ</strong>?
                         Ti piacerebbe avere uno stipendio e divertirti mentre lavori?

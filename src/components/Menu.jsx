@@ -4,7 +4,8 @@ import { Breakpoint } from 'react-socks';
 import 'tachyons';
 import './Menu.scss'
 import MenuContent from './MenuContent/MenuContent'
-import MenuContent2 from './MenuContent/MenuContent2';
+import Headroom from 'react-headroom'
+import Logo from './Logo/Logo';
 
 export default class Menu extends Component {
     constructor(props) {
@@ -31,6 +32,9 @@ export default class Menu extends Component {
         return (
             <div>
                 <Breakpoint xlmobile down>
+                <Headroom wrapperStyle={{background: "#3ae5fd"}}>
+                    <Logo />
+                </Headroom>
                     <div style={{background: "#3ae5fd"}}>
                     <MenuContent />
                     <div style={{lineHeight: "0"}}>
@@ -58,7 +62,10 @@ export default class Menu extends Component {
                     </div>
                     </div>
                 </Breakpoint>
-                <Breakpoint tablet up>
+                <Breakpoint tablet only>
+                <Headroom wrapperStyle={{background: "#3ae5fd"}}>
+                    <Logo />
+                </Headroom>
                 <Carousel ref={this.carousel} emulateTouch showThumbs={false} showStatus={false} interval={5000} dynamicHeight={false} showIndicators={false} transitionTime={400} >
                     <div className="container">
                         <Breakpoint tablet only>

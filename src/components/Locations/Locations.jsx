@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Breakpoint } from 'react-socks';
 import 'tachyons';
 import './Locations.scss'
+import Headroom from 'react-headroom'
+import Logo from '../Logo/Logo'
 
 const mobile = {
     marginTop: "6rem",
@@ -20,6 +22,9 @@ export default class Locations extends Component {
             <div className="container">
                 <img id="milano" src={require("../../assets/burgez-07.png")} alt="" />
                 <Breakpoint xlmobile down>
+                <Headroom>
+                    <Logo />
+                </Headroom>
                     <div className="list" style={mobile}>
                         <ul>
                             <li id="title">VIA SAVONA 15</li>
@@ -96,6 +101,10 @@ export default class Locations extends Component {
                     {/* <div className="botbar"></div> */}
                 </Breakpoint>
                 <Breakpoint tablet only>
+                <Headroom>
+                    <Logo />
+                </Headroom>
+
                     <div id="mobile-scroll">
                         <div className="list fl w-50">
                             <ul>
