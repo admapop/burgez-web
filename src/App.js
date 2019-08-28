@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar/Navbar'
-import Logo from './components/Logo/Logo';
+import LogoMain from './components/Logo/LogoMain';
 import { Route, Switch } from 'react-router-dom';
 import { BreakpointProvider, Breakpoint } from 'react-socks';
 import { setDefaultBreakpoints } from 'react-socks';
@@ -32,7 +32,7 @@ class App extends Component {
       <div className="App" id="App">
         <BreakpointProvider>
         <Breakpoint desktop only>         
-          <Logo />
+          <LogoMain />
         </Breakpoint>
           <Navbar />
           <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} isOpen={false} />

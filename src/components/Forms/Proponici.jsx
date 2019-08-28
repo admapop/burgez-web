@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Breakpoint } from 'react-socks';
+import Headroom from 'react-headroom'
+import Logo from '../Logo/Logo';
 
 import 'tachyons'
 import './Proponici.scss'
@@ -170,11 +172,11 @@ export default class Proponici extends Component {
                     </div>
                 </Breakpoint>
                 <Breakpoint tablet down>
-                    <Breakpoint xlmobile down>
-                        <div className="topbar"></div>
-                    </Breakpoint>
+                        <Headroom>
+                            <Logo />
+                        </Headroom>
                     <div style={container}>
-                        <h1 className="f2 w-80 i ml3 mt6" id="desktop">{`CERCHIAMO IMMOBILI ${!this.state.isToggle ? 1 : 2}/2`}</h1>
+                        <h1 className="f2 w-80 i ml3 mt3" id="desktop">{`CERCHIAMO IMMOBILI ${!this.state.isToggle ? 1 : 2}/2`}</h1>
                         <a className="title fr w-20 mr5" id="next" onClick={this.handleClick}>{!this.state.isToggle ? <span>&#8250;</span> : <span>&#8249;</span>}</a>
                     </div>
                     <form className="" onSubmit={this.handleSubmit}>
