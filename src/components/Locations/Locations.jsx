@@ -209,7 +209,6 @@ export default class Locations extends Component {
 
                 </Breakpoint>
                 <Breakpoint desktop>
-                    {this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null}
                     <div className="header fl w-10"><h1>MILANO</h1></div>
                     <div className="list fl w-40">
                         <div className="location-container fl w-100">
