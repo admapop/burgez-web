@@ -11,6 +11,7 @@
     "react-headroom": "^2.2.8",
     "react-pose": "^4.0.8",
     "react-responsive-carousel": "^3.1.49",
+    "react-responsive-modal": "^4.0.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-socks": "^2.0.0"
