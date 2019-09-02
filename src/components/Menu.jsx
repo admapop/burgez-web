@@ -68,7 +68,7 @@ export default class Menu extends Component {
                             <Logo />
                         </Headroom>
                     </Breakpoint>
-                <Carousel ref={this.carousel} emulateTouch showThumbs={false} showStatus={false} interval={5000} dynamicHeight={false} showIndicators={false} transitionTime={400} >
+                <Carousel ref={this.carousel} emulateTouch showThumbs={false} showStatus={false} stopOnHover={false} autoPlay={true} interval={5000} dynamicHeight={false} showIndicators={false} transitionTime={400} useKeyboardArrows={true}>
                     <div className="container">
                         <Breakpoint tablet only>
                             <div id="mobile-container" style={{height: "80vh"}}>
