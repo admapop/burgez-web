@@ -35,7 +35,7 @@ export default class Main extends Component {
                     <Breakpoint tablet only>
                     <LogoMain />
                     </Breakpoint>
-                    <Carousel emulateTouch showThumbs={false} showStatus={false} autoPlay={true} interval={5000} infiniteLoop={true} showIndicators={false} stopOnHover={false}>
+                    <Carousel emulateTouch showThumbs={false} showStatus={false} autoPlay={true} interval={5000} infiniteLoop={true} showIndicators={false} stopOnHover={false} useKeyboardArrows={true}>
                         <div>
                             <img src={require("../assets/Landing_Page_new.png")} alt="" />
                         </div>
