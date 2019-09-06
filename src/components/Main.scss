@@ -283,4 +283,72 @@
       color: #fff; }
     .carousel:hover .slide .legend {
       opacity: 1; }
+.text-locali {
+  display: flex;
+  flex-direction: column;
+  color: #3ae5fd;
+  // text-shadow: 1px 0 0 grey, 0 -1px 0 grey, 0 1px 0 grey, -1px 0 0 grey;
   
+  .locale {
+    margin: 20vh 18vw 0 18vw;
+    font-size: 9.5vw;
+    text-shadow: 2px 0 4px red, 0 -2px 4px red, 0 2px 4px red, -2px 0 4px red;
+
+  }
+
+  .trovaci {
+    margin: 3vw 18vw 0 18vw;
+    font-size: 9.5vw;
+    text-shadow: 2px 0 4px red, 0 -2px 4px red, 0 2px 4px red, -2px 0 4px red;
+  }
+
+  .ticinese {
+    margin: 0 18vw 0 18vw;
+    color: red;
+    font-size: 11vw;
+  }
+}
+
+.location-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 2vw 2vh 0;
+  border: 0;
+  -moz-box-shadow:    3px 3px 5px 6px rgb(68, 68, 68);
+  -webkit-box-shadow: 3px 3px 5px 6px rgb(68, 68, 68);
+  box-shadow:         3px 3px 5px 6px rgb(68, 68, 68);
+  background: grey;
+  opacity: 0.5;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+
+  &:hover {
+    opacity: 0.8;
+    span {
+      color: red;
+      @media only screen and (min-width: 741px) and (max-width: 1023px) {
+        font-size: 7vw;
+      }
+
+    }  
+  }
+  span {
+    transition: color 2s ease-out;
+    -webkit-transition: color 2s ease-out;
+    -moz-transition: color 2s ease-out;
+    -o-transition: color 2s ease-out;
+    font-size: 3vw;
+    color: gray;
+    @media only screen and (min-width: 741px) and (max-width: 1023px) {
+      font-size: 7vw;
+    }
+}
+}

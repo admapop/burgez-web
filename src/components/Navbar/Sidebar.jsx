@@ -38,7 +38,7 @@ export default class Sidebar extends Component {
                 <NavLink exact to="/menu" className="menu-item" onClick={() => this.closeMenu()} >MENÙ</NavLink>
                 <NavLink exact to="/story" className="menu-item" onClick={() => this.closeMenu()} >STORY</NavLink>
                 <NavLink exact to="locations" className="menu-item" onClick={() => this.closeMenu()} >LOCATIONS</NavLink>
-                <NavLink exact to="creativity" className="menu-item" onClick={() => this.closeMenu()} >CREATIVITY</NavLink>
+                {/* <NavLink exact to="creativity" className="menu-item" onClick={() => this.closeMenu()} >CREATIVITY</NavLink> */}
                 <NavLink exact to="contact" className="menu-item" onClick={() => this.closeMenu()} >CONTACT</NavLink>
                 <NavLink exact to="proponici" className="menu-item" onClick={() => this.closeMenu()} >PROPONICI IL TUO IMMOBILE</NavLink>
                 <NavLink exact to="lavora" className="menu-item" onClick={() => this.closeMenu()} >LAVORA CON NOI</NavLink>

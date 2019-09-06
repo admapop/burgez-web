@@ -14,27 +14,26 @@ const style = {
     borderRight: "20px solid transparent",
     borderTop: "20px solid #f00",
     position: "absolute",
-    bottom: "4rem",
+    bottom: "15vh",
     left: "45vw"
 }
 
 export default class Arrow extends Component {
-    constructor(props) {
-        super(props)
-        this.state = { isVisible: true }
-    }
-    // state = { isVisible: true };
-
-    componentDidMount() {
-        setInterval(() => {
-            this.setState({ isVisible: !this.state.isVisible });
-        }, 1000);
-    }
+    // constructor(props) {
+    //     super(props)
+    //     this.state = { isVisible: true }
+    // }
+    // componentDidMount() {
+    //     setInterval(() => {
+    //         this.setState({ isVisible: !this.state.isVisible });
+    //     }, 1000);
+    // }
     render() {
-        const { isVisible } = this.state;
+        // const { isVisible } = this.state;
         // setInterval(() => {
         //     this.setState({ isVisible: !this.state.isVisible });
         // }, 1000);
-        return <Animated className="arrow-down" style={style} pose={isVisible ? 'visibile' : 'hidden'} />
+        // return <div className="arrow-down" style={style} pose={isVisible ? 'visibile' : 'hidden'} />
+        return <div className="arrow-down" style={style} />
     }
 }

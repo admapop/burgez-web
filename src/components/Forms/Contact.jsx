@@ -4,6 +4,7 @@ import 'tachyons'
 import { Breakpoint } from 'react-socks';
 import Headroom from 'react-headroom'
 import Logo from '../Logo/Logo';
+import LogoMain from '../Logo/LogoMain';
 
 export default class Contact extends Component {
     constructor(props) {
@@ -50,9 +51,10 @@ export default class Contact extends Component {
                     </div>
                 </Breakpoint>
                 <Breakpoint tablet down>
-                        <Headroom>
+                        {/* <Headroom>
                             <Logo />
-                        </Headroom>
+                        </Headroom> */}
+                        <LogoMain />
                     <div className="wrapper">
                         <h1 className="f1 i ml4">CONTACT</h1>
                         <form className="" onSubmit={this.handleSubmit}>

@@ -6,6 +6,7 @@ import './Menu.scss'
 import MenuContent from './MenuContent/MenuContent'
 import Headroom from 'react-headroom'
 import Logo from './Logo/Logo';
+import LogoMain from './Logo/LogoMain';
 
 export default class Menu extends Component {
     constructor(props) {
@@ -63,10 +64,11 @@ export default class Menu extends Component {
                     </div>
                 </Breakpoint>
                 <Breakpoint tablet up>
-                    <Breakpoint>
-                        <Headroom wrapperStyle={{background: "#3ae5fd"}}>
+                    <Breakpoint tablet only>
+                        {/* <Headroom wrapperStyle={{background: "#3ae5fd", zIndex: "100"}}>
                             <Logo />
-                        </Headroom>
+                        </Headroom> */}
+                        <LogoMain />
                     </Breakpoint>
                 <Carousel ref={this.carousel} emulateTouch showThumbs={false} showStatus={false} stopOnHover={false} autoPlay={true} interval={5000} dynamicHeight={false} showIndicators={false} transitionTime={400} useKeyboardArrows={true}>
                     <div className="container">
