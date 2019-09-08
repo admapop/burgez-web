@@ -62,19 +62,19 @@
         height: 7vw;
     }
     #next {
-        height: 8vw;
+        height: 6vw;
         width: auto;
-        margin-left: auto;
+        // margin-left: auto;
         font-size: 10rem;
         font-weight: 400;
         position: relative;
         right: 0;
-        top: -5vw;
+        top: -2vw;
         @media only screen and (min-height: 900px) {
             top: -3.5rem;
         }
         @media only screen and (max-width: 900px) {
-            top: 1rem;
+            top: -1vw;
         }
 
         &:hover {
