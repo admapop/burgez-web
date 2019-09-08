@@ -13,6 +13,8 @@ import Contact from './components/Forms/Contact';
 import Proponici from './components/Forms/Proponici';
 import Lavora from './components/Forms/Lavora';
 import Sidebar from './components/Navbar/Sidebar';
+import Creativity from './components/Creativity/Creativity';
+
 import "./App.scss";
 
 setDefaultBreakpoints([
@@ -42,6 +44,7 @@ class App extends Component {
               <Route exact path="/menu" component={Menu} />
               <Route exact path="/story" component={Story} />
               <Route exact path="/locations" component={Locations} />
+              <Route exact path="/creativity" component={Creativity} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/proponici" component={Proponici} />
               <Route exact path="/lavora" component={Lavora} />

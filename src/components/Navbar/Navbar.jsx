@@ -24,8 +24,8 @@ export default class Navbar extends Component {
                     <li className="separator"><span className="circle"></span></li>
                     <li><NavLink exact to="/locations" activeClassName="active">LOCATIONS</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
-                    {/* <li><NavLink exact to="creativity">CREATIVITY</NavLink></li>
-                    <li className="separator"><span className="circle"></span></li> */}
+                    <li><NavLink exact to="/creativity">CREATIVITY</NavLink></li>
+                    <li className="separator"><span className="circle"></span></li>
                     <li><NavLink exact to="/contact" activeClassName="active">CONTACT</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
                     <li><NavLink exact to="/proponici" activeClassName="active">PROPONICI IL TUO IMMOBILE</NavLink></li>
