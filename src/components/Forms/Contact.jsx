@@ -35,15 +35,15 @@ export default class Contact extends Component {
             body: encode({ "form-name": "contact", ...this.state })
         })
             .then(() => alert("Success!"))
+            .then(() => this.setState({ name: '', email: '', subject: '', message: '' }))
             .catch(error => alert(error));
-    
         event.preventDefault();
     }
 
     render() {
         const { name, email, subject, message } = this.state;
         return (
-            <form onSubmit={this.handleSubmit}>
+            <div>
                 <Breakpoint desktop only>
                     <div className="wrapper">
                         <h1 className="f1 i" id="desktop">CONTACT</h1>
@@ -96,7 +96,7 @@ export default class Contact extends Component {
                         </form>
                     </div>
                 </Breakpoint>
-            </form>
+            </div>
         )
     }
 }
