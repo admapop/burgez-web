@@ -84,7 +84,7 @@ export default class Proponici extends Component {
     handleSubmit = (event) => {
         fetch("/", {
             method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            headers: { "Content-Type": "multipart/form-data" },
             body: encode({ "form-name": "proponici", ...this.state })
         })
             .then(() => alert("Success!"))
