@@ -40,6 +40,7 @@ export default class Lavora extends Component {
     }
 
     render() {
+        const { name, email, subject, message } = this.state;
         return (
             <div className="container-lavora">
                 <Breakpoint desktop only>
