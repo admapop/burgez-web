@@ -59,8 +59,8 @@
       animation: pulse 5s infinite;
       margin: 0 5px;
       display: inline-block;
-      border-top: 8px solid transparent;
-      border-bottom: 8px solid transparent;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
       content: ''; }
     .carousel .control-disabled.control-arrow {
       opacity: 0;
@@ -145,7 +145,7 @@
         font-size: 26px;
         bottom: 0;
         margin-top: 0;
-        padding: 5px; }
+        padding: 20px; }
         .carousel.carousel-slider .control-arrow:hover {
           background: rgba(0, 0, 0, 0.2); }
     .carousel .slider-wrapper {
