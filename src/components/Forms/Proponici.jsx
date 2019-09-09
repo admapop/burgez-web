@@ -66,9 +66,8 @@ export default class Proponici extends Component {
     }
 
     handleChange = (event) => {
-        console.log(event.target.name, event.target.value)
         if (event.target.name === 'file') {
-            this.setState({ file: this.fileInput.current.files });
+            this.setState({ file: this.fileInput.current.files[0] });
         } else if(event.target.name === 'terms') {
             if (this.state.terms === 'on') {
                 console.log('first')
