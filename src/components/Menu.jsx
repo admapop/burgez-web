@@ -4,7 +4,9 @@ import { Breakpoint } from 'react-socks';
 import 'tachyons';
 import './Menu.scss'
 import MenuContent from './MenuContent/MenuContent'
-import MenuContent2 from './MenuContent/MenuContent2';
+import Headroom from 'react-headroom'
+import Logo from './Logo/Logo';
+import LogoMain from './Logo/LogoMain';
 
 export default class Menu extends Component {
     constructor(props) {
@@ -15,50 +17,60 @@ export default class Menu extends Component {
         }
     }
 
-      componentDidMount() {
-        if(!this.state.reloaded) {
-            this.setState({reloaded: true});
-            this.carousel.current.setState({
-                itemSize: this.carousel.current.itemsRef[0].clientHeight,
-                wrapperSize: this.carousel.current.itemsRef[0].clientHeight
-            })
-            console.log(this.carousel.current.state.itemSize)        
-        }
-        return;
-      }
+    //   componentDidMount() {
+    //     if(!this.state.reloaded) {
+    //         this.setState({reloaded: true});
+    //         this.carousel.current.setState({
+    //             itemSize: this.carousel.current.itemsRef[0].clientHeight,
+    //             wrapperSize: this.carousel.current.itemsRef[0].clientHeight
+    //         })
+    //         console.log(this.carousel.current.state.itemSize)        
+    //     }
+    //     return;
+    //   }
     
     render() {
         return (
             <div>
                 <Breakpoint xlmobile down>
-                <Carousel ref={this.carousel} emulateTouch selectedItem={0} showArrows={false} showThumbs={false} infiniteLoop={true} showStatus={false} interval={5000} axis={"vertical"} showIndicators={false} transitionTime={400}>
+                <Headroom wrapperStyle={{background: "#3ae5fd"}} style={{paddingTop: "30px"}}>
+                    <Logo />
+                </Headroom>
+                    <div style={{background: "#3ae5fd"}}>
                     <MenuContent />
-                    <MenuContent2/>
+                    <div style={{lineHeight: "0"}}>
                     <div>
-                        <img src={require("../assets/Menu/burgez-10.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Hamburger.png")} alt="" />
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-11.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Cheeseburger.png")} alt="" />
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-12.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Smoke_Burger.png")} alt="" />
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-13.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Double_Big_Burger.png")} alt="" />
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-14.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Triple_Big_Burger.png")} alt="" />
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-15.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Chicken_Burger.png")} alt="" />
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-16.png")} alt="" />
+                        <img src={require("../assets/Menu/Mobile/Double_Cheeseburger.png")} alt="" />
                     </div>
-                </Carousel>
+                    </div>
+                    </div>
                 </Breakpoint>
                 <Breakpoint tablet up>
-                <Carousel ref={this.carousel} emulateTouch showThumbs={false} showStatus={false} interval={5000} dynamicHeight={false} showIndicators={false} transitionTime={400} >
+                    <Breakpoint tablet only>
+                        {/* <Headroom wrapperStyle={{background: "#3ae5fd", zIndex: "100"}}>
+                            <Logo />
+                        </Headroom> */}
+                        <LogoMain />
+                    </Breakpoint>
+                <Carousel ref={this.carousel} emulateTouch showThumbs={false} showStatus={false} stopOnHover={false} autoPlay={true} interval={5000} dynamicHeight={false} showIndicators={false} transitionTime={400} useKeyboardArrows={true}>
                     <div className="container">
                         <Breakpoint tablet only>
                             <div id="mobile-container" style={{height: "80vh"}}>
@@ -430,25 +442,60 @@ export default class Menu extends Component {
                         </Breakpoint>
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-10.png")} alt="" />
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Hamburger.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
+                            <img src={require("../assets/Menu/burgez-10_2.png")} alt="" />
+                        </Breakpoint>
                     </div>
                     <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Cheeseburger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
                         <img src={require("../assets/Menu/burgez-11.png")} alt="" />
+                        </Breakpoint>
                     </div>
                     <div>
-                        <img src={require("../assets/Menu/burgez-12.png")} alt="" />
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Smoke_Burger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
+                        <img src={require("../assets/Menu/burgez-12.png")} alt="" />                            
+                        </Breakpoint>
                     </div>
                     <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Big_Burger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
                         <img src={require("../assets/Menu/burgez-13.png")} alt="" />
+                        </Breakpoint>
                     </div>
                     <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Triple_Big_Burger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
                         <img src={require("../assets/Menu/burgez-14.png")} alt="" />
+                        </Breakpoint>
                     </div>
                     <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Chicken_Burger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
                         <img src={require("../assets/Menu/burgez-15.png")} alt="" />
+                        </Breakpoint>
                     </div>
                     <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Double_Cheeseburger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                        <Breakpoint desktop only>
                         <img src={require("../assets/Menu/burgez-16.png")} alt="" />
+                        </Breakpoint>
                     </div>
                 </Carousel>
                 </Breakpoint>

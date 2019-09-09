@@ -18,19 +18,19 @@ export default class Navbar extends Component {
                 </div> */}
                 <Breakpoint desktop only>
                 <ul className="navbar" id="menuu">
-                    <li><NavLink exact to="/menu">MENÙ</NavLink></li>
+                    <li><NavLink exact to="/menu" activeClassName="active">MENÙ</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
-                    <li><NavLink exact to="/story">STORY</NavLink></li>
+                    <li><NavLink exact to="/story" activeClassName="active">STORY</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
-                    <li><NavLink exact to="locations">LOCATIONS</NavLink></li>
+                    <li><NavLink exact to="/locations" activeClassName="active">LOCATIONS</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
-                    <li><NavLink exact to="creativity">CREATIVITY</NavLink></li>
+                    <li><NavLink exact to="/creativity">CREATIVITY</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
-                    <li><NavLink exact to="contact">CONTACT</NavLink></li>
+                    <li><NavLink exact to="/contact" activeClassName="active">CONTACT</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
-                    <li><NavLink exact to="proponici">PROPONICI IL TUO IMMOBILE</NavLink></li>
+                    <li><NavLink exact to="/proponici" activeClassName="active">PROPONICI IL TUO IMMOBILE</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
-                    <li><NavLink exact to="lavora">LAVORA CON NOI</NavLink></li>
+                    <li><NavLink exact to="/lavora" activeClassName="active">LAVORA CON NOI</NavLink></li>
                 </ul>
                 </Breakpoint>
             </nav>

@@ -84,6 +84,10 @@
   
   /* Styling of overlay */
   .bm-overlay {
+    top: 0;
     background: rgba(0, 0, 0, 0.3);
   }
   
+  .bm-menu-wrap {
+    top: 0;
+  }

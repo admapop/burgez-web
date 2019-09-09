@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Breakpoint } from 'react-socks';
+import Headroom from 'react-headroom'
+import Logo from '../Logo/Logo';
 
 import 'tachyons'
 import './Proponici.scss'
@@ -13,7 +15,8 @@ const style = {
 }
 
 const container = {
-    display: "flex"
+    display: "flex",
+    justifyContent: "space-between"
 }
 
 const tablet = {
@@ -170,11 +173,13 @@ export default class Proponici extends Component {
                     </div>
                 </Breakpoint>
                 <Breakpoint tablet down>
-                    <Breakpoint xlmobile down>
-                        <div className="topbar"></div>
-                    </Breakpoint>
+                        <Headroom style={{
+                        paddingTop: "30px"
+                    }}>
+                            <Logo />
+                        </Headroom>
                     <div style={container}>
-                        <h1 className="f2 w-80 i ml3 mt6" id="desktop">{`CERCHIAMO IMMOBILI ${!this.state.isToggle ? 1 : 2}/2`}</h1>
+                        <h1 className="f2 w-80 i ml3 mt3" id="desktop">{`CERCHIAMO IMMOBILI ${!this.state.isToggle ? 1 : 2}/2`}</h1>
                         <a className="title fr w-20 mr5" id="next" onClick={this.handleClick}>{!this.state.isToggle ? <span>&#8250;</span> : <span>&#8249;</span>}</a>
                     </div>
                     <form className="" onSubmit={this.handleSubmit}>
@@ -215,7 +220,7 @@ export default class Proponici extends Component {
                                 <input className="w-100 bn pv2 " type="text" name="cap" id="cap" />
                             </div>
                             <div className="" style={tablet}>
-                                <label htmlFor="city" className="fl w-90 f2 fw4 b db mb2 ">CITTà</label>
+                                <label htmlFor="city" className="fl w-90 f2 fw4 b db mb2 ">CITTÀ</label>
                                 <input className="w-100 bn pv2 " type="text" name="city" id="city" />
                             </div>
                         </div>
@@ -255,7 +260,7 @@ export default class Proponici extends Component {
                             </div>
                             <div className="" style={tablet}>
                                 <label htmlFor="file" className="fl w-90 f2 fw4 b db mb2 ">DESIDERA INVIARE PLANIMETRIE O PDF?</label>
-                                <input className="" type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" />
+                                <input className="file" type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" />
                             </div>
 
 

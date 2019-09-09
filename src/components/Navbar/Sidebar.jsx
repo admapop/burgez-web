@@ -3,7 +3,6 @@ import { slide as Menu } from 'react-burger-menu';
 import { NavLink } from 'react-router-dom'
 import './reactmenu.css'
 import { Breakpoint } from 'react-socks';
-import Logo from '../Logo/Logo';
 
 export default class Sidebar extends Component {
     constructor (props) {
@@ -32,18 +31,17 @@ export default class Sidebar extends Component {
     render() {
         return (
             <Breakpoint tablet down>
-                  <Logo />
             <Menu {...this.props}
             isOpen={this.state.menuOpen}
             onStateChange={(state) => this.handleStateChange(state)}
             right>
                 <NavLink exact to="/menu" className="menu-item" onClick={() => this.closeMenu()} >MENÙ</NavLink>
                 <NavLink exact to="/story" className="menu-item" onClick={() => this.closeMenu()} >STORY</NavLink>
-                <NavLink exact to="locations" className="menu-item" onClick={() => this.closeMenu()} >LOCATIONS</NavLink>
-                <NavLink exact to="creativity" className="menu-item" onClick={() => this.closeMenu()} >CREATIVITY</NavLink>
-                <NavLink exact to="contact" className="menu-item" onClick={() => this.closeMenu()} >CONTACT</NavLink>
-                <NavLink exact to="proponici" className="menu-item" onClick={() => this.closeMenu()} >PROPONICI IL TUO IMMOBILE</NavLink>
-                <NavLink exact to="lavora" className="menu-item" onClick={() => this.closeMenu()} >LAVORA CON NOI</NavLink>
+                <NavLink exact to="/locations" className="menu-item" onClick={() => this.closeMenu()} >LOCATIONS</NavLink>
+                <NavLink exact to="/creativity" className="menu-item" onClick={() => this.closeMenu()} >CREATIVITY</NavLink>
+                <NavLink exact to="/contact" className="menu-item" onClick={() => this.closeMenu()} >CONTACT</NavLink>
+                <NavLink exact to="/proponici" className="menu-item" onClick={() => this.closeMenu()} >PROPONICI IL TUO IMMOBILE</NavLink>
+                <NavLink exact to="/lavora" className="menu-item" onClick={() => this.closeMenu()} >LAVORA CON NOI</NavLink>
             </Menu>
             </Breakpoint>
         )

@@ -1,7 +1,8 @@
 .rest {
+    color: gray;
 	padding: 5px 10px;
 	background-color: white;
-	border: 3px solid black;
+	border: 2px solid grey;
 	position: fixed;
     bottom: 0.75rem;
     left: 0.75rem;
@@ -9,9 +10,10 @@
 }
 
 .mobile {
+    color: gray;
     padding: 5px 10px;
 	background-color: white;
-	border: 3px solid black;
+	border: 2px solid grey;
     position: fixed;
     left: 50%;
     bottom: 1rem;
@@ -19,3 +21,6 @@
     font-size: 0.8rem;
 }
 
+footer > a:hover {
+    color: black;
+}

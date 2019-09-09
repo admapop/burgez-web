@@ -4,9 +4,11 @@ margin-top: 10rem;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     @media only screen and (max-width: 420px) {
-        margin-top: 4rem;
+        margin-top: 7rem;
         h1 {
             margin-bottom: 0;
+            margin-left: 1rem;
+            margin-top: 0;
         }
         form {
             // height: 65vh;
@@ -42,7 +44,7 @@ margin-top: 10rem;
     width: 90vw;
 }
 textarea {
-    height: 20vh;
+    height: 13vh;
 }
 label {
     margin-top: 1rem;

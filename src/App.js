@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar/Navbar'
-import Logo from './components/Logo/Logo';
+import LogoMain from './components/Logo/LogoMain';
 import { Route, Switch } from 'react-router-dom';
 import { BreakpointProvider, Breakpoint } from 'react-socks';
 import { setDefaultBreakpoints } from 'react-socks';
@@ -13,6 +13,8 @@ import Contact from './components/Forms/Contact';
 import Proponici from './components/Forms/Proponici';
 import Lavora from './components/Forms/Lavora';
 import Sidebar from './components/Navbar/Sidebar';
+import Creativity from './components/Creativity/Creativity';
+
 import "./App.scss";
 
 setDefaultBreakpoints([
@@ -32,7 +34,7 @@ class App extends Component {
       <div className="App" id="App">
         <BreakpointProvider>
         <Breakpoint desktop only>         
-          <Logo />
+          <LogoMain />
         </Breakpoint>
           <Navbar />
           <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} isOpen={false} />
@@ -42,6 +44,7 @@ class App extends Component {
               <Route exact path="/menu" component={Menu} />
               <Route exact path="/story" component={Story} />
               <Route exact path="/locations" component={Locations} />
+              <Route exact path="/creativity" component={Creativity} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/proponici" component={Proponici} />
               <Route exact path="/lavora" component={Lavora} />

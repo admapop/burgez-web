@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import Breakpoint from 'react-socks';
 import './Story.scss'
+import Headroom from 'react-headroom'
+import Logo from '../Logo/Logo'
 
 const mobileStyle = {
     position: 'relative',
     right: '25vw',
-    top: '6rem',
+    top: '1rem',
     width: '100%'
 }
 
@@ -14,6 +16,11 @@ export default class Story extends Component {
         return (
             <div className="container">
                 <Breakpoint tablet only>
+                <Headroom style={{
+                        paddingTop: "30px"
+                    }}>
+                    <Logo />
+                </Headroom>
                     <div id="mobile-scroll">
                     <div>
                         <img style={{ width: "100%" }} src={require("../../assets/burgez-06.png")} alt="" />
@@ -59,8 +66,11 @@ export default class Story extends Component {
                     </div>
                 </Breakpoint>
                 <Breakpoint xlmobile down>
-                    <div className="topbar"></div>
-
+                <Headroom style={{
+                        paddingTop: "30px"
+                    }}>
+                    <Logo />
+                </Headroom>
                     <div>
                         <img style={mobileStyle} src={require("../../assets/burgez-06.png")} alt="" />
                     </div>
