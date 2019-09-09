@@ -132,7 +132,7 @@ export default class Lavora extends Component {
                     </div>
                     <div className="wrapper" id="tablet-down">
                         <h1 className="f1 i ml4">CONTACT</h1>
-                        <form className="" onSubmit={this.handleSubmit}>
+                        <form name="lavora" onSubmit={this.handleSubmit}>
                             <div className="tablet">
                                 <label htmlFor="name" className="fl w-90 f2 fw4 b db mb2">NOME E COGNOME</label>
                                 <input className="w-90 bn pv2" type="text" name="name" id="name" value={name} onChange={this.handleChange} />
