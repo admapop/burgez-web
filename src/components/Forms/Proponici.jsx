@@ -89,7 +89,25 @@ export default class Proponici extends Component {
             body: encode({ "form-name": "proponici", ...this.state })
         })
             .then(() => alert("Success!"))
-            .then(() => this.setState({ name: '', email: '', subject: '', message: '' }))
+            .then(() => this.setState({ 
+                name: '',
+                tel: null,
+                email: '',
+                tipoOfferente: 'default',
+                address: '',
+                civico: '',
+                cap: '',
+                city: '',
+                rProposta: '',
+                cannaFumaria: '',
+                cannaInstall: '',
+                file: [], //no idea dude
+                totaleAffitto: '',
+                surface: '',
+                vetrine: '',
+                message: '',
+                terms: '' 
+            }))
             .catch(error => alert(error));
         event.preventDefault();
     }
