@@ -46,7 +46,9 @@ export default class Locations extends Component {
             <div className="container">
                 <img id="milano" src={require("../../assets/burgez-07.png")} alt="" />
                 <Breakpoint xlmobile down>
-                    <Headroom>
+                    <Headroom style={{
+                        paddingTop: "30px"
+                    }}>
                         <Logo />
                     </Headroom>
                     <div className="list" style={mobile}>
@@ -170,7 +172,9 @@ export default class Locations extends Component {
                     </div>
                 </Breakpoint>
                 <Breakpoint tablet only>
-                    <Headroom>
+                    <Headroom style={{
+                        paddingTop: "30px"
+                    }}>
                         <Logo />
                     </Headroom>
                     <div id="mobile-scroll">

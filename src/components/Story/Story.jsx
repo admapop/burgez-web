@@ -16,7 +16,9 @@ export default class Story extends Component {
         return (
             <div className="container">
                 <Breakpoint tablet only>
-                <Headroom>
+                <Headroom style={{
+                        paddingTop: "30px"
+                    }}>
                     <Logo />
                 </Headroom>
                     <div id="mobile-scroll">
@@ -64,7 +66,9 @@ export default class Story extends Component {
                     </div>
                 </Breakpoint>
                 <Breakpoint xlmobile down>
-                <Headroom>
+                <Headroom style={{
+                        paddingTop: "30px"
+                    }}>
                     <Logo />
                 </Headroom>
                     <div>

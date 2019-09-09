@@ -7,7 +7,7 @@
 
 .logoMain a img {
     width: 15rem;
-    top: 0;
+    top: 30px;
     z-index: 2;
     position: fixed;
 }

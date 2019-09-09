@@ -33,7 +33,7 @@ export default class Menu extends Component {
         return (
             <div>
                 <Breakpoint xlmobile down>
-                <Headroom wrapperStyle={{background: "#3ae5fd"}}>
+                <Headroom wrapperStyle={{background: "#3ae5fd"}} style={{paddingTop: "30px"}}>
                     <Logo />
                 </Headroom>
                     <div style={{background: "#3ae5fd"}}>

@@ -12,7 +12,8 @@ const Creativity = () => {
       </Headroom>
       <div className='creativity-container'>
         <div className='creativity-text'>
-          <span className='creativity-p'>La creatività, i social, la comunicazione e il marketing sono curati dagli <span className='creativity-bold'>UPPER BEAST SIDE.</span></span>
+          <span className='creativity-p'>La creatività, i social, la comunicazione e il marketing sono curati dagli 
+          <br/> <span className='creativity-bold'>UPPER BEAST SIDE.</span></span>
         </div>
         <div className='creativity-ink'><a href="http://www.upperbeastside.com">upperbeastside.com</a></div>
       </div>

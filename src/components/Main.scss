@@ -312,43 +312,69 @@
 .location-box {
   position: absolute;
   bottom: 0;
-  right: 0;
-  margin: 0 2vw 2vh 0;
+  margin-bottom: 2vh;
+  margin-left: 2vw;
   border: 0;
-  -moz-box-shadow:    3px 3px 5px 6px rgb(68, 68, 68);
-  -webkit-box-shadow: 3px 3px 5px 6px rgb(68, 68, 68);
-  box-shadow:         3px 3px 5px 6px rgb(68, 68, 68);
-  background: grey;
-  opacity: 0.5;
-  width: 400px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: opacity 2s ease-out;
-  -webkit-transition: opacity 2s ease-out;
-  -moz-transition: opacity 2s ease-out;
-  -o-transition: opacity 2s ease-out;
+  background: transparent;
+  // opacity: 0.5;
+  width: auto;
+  height: 100px;
+  @media only screen and (min-width: 741px) and (max-width: 1023px) {
+    margin-left: 0;
+  }
 
-  &:hover {
-    opacity: 0.8;
+
     span {
-      color: red;
+      font-size: 3vw;
+      color: #3ae5fd;
+      // color: white;
       @media only screen and (min-width: 741px) and (max-width: 1023px) {
         font-size: 7vw;
       }
 
     }  
-  }
-  span {
-    transition: color 2s ease-out;
-    -webkit-transition: color 2s ease-out;
-    -moz-transition: color 2s ease-out;
-    -o-transition: color 2s ease-out;
-    font-size: 3vw;
-    color: gray;
-    @media only screen and (min-width: 741px) and (max-width: 1023px) {
-      font-size: 7vw;
-    }
 }
-}
+
+// .location-box {
+//   position: absolute;
+//   bottom: 0;
+//   right: 0;
+//   margin: 0 2vw 2vh 0;
+//   border: 0;
+//   -moz-box-shadow:    3px 3px 5px 6px rgb(68, 68, 68);
+//   -webkit-box-shadow: 3px 3px 5px 6px rgb(68, 68, 68);
+//   box-shadow:         3px 3px 5px 6px rgb(68, 68, 68);
+//   background: grey;
+//   opacity: 0.5;
+//   width: 400px;
+//   height: 300px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   transition: opacity 2s ease-out;
+//   -webkit-transition: opacity 2s ease-out;
+//   -moz-transition: opacity 2s ease-out;
+//   -o-transition: opacity 2s ease-out;
+
+//   &:hover {
+//     opacity: 0.8;
+//     span {
+//       color: red;
+//       @media only screen and (min-width: 741px) and (max-width: 1023px) {
+//         font-size: 7vw;
+//       }
+
+//     }  
+//   }
+//   span {
+//     transition: color 2s ease-out;
+//     -webkit-transition: color 2s ease-out;
+//     -moz-transition: color 2s ease-out;
+//     -o-transition: color 2s ease-out;
+//     font-size: 3vw;
+//     color: gray;
+//     @media only screen and (min-width: 741px) and (max-width: 1023px) {
+//       font-size: 7vw;
+//     }
+// }
+// }

@@ -22,8 +22,9 @@ export default class Main extends Component {
                         </div> */}
                         <div style={{height: "100vh"}}>
                             <div className="text-locali">
-                                <span className="locale">Il nuovo locale di BURGEZ</span>
-                                <span className="trovaci">Vieni a trovarci in</span>
+                                <span className="locale">Il nuovo store di BURGEZ e in</span>
+                                {/* <span className="trovaci">Vieni a trovarci in</span> */}
+                                <br/>
                                 <span className="ticinese">CORSO DI PORTA TICINESE 14</span>
                                 <Arrow />
                             </div>

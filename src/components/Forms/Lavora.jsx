@@ -76,7 +76,9 @@ export default class Lavora extends Component {
                     </div>
                 </Breakpoint>
                 <Breakpoint tablet down>
-                <Headroom>
+                <Headroom style={{
+                        paddingTop: "30px"
+                    }}>
                     <Logo />
                 </Headroom>
                     <div className="main" id="text_portrait">

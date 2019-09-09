@@ -15,7 +15,8 @@ const style = {
 }
 
 const container = {
-    display: "flex"
+    display: "flex",
+    justifyContent: "space-between"
 }
 
 const tablet = {
@@ -172,7 +173,9 @@ export default class Proponici extends Component {
                     </div>
                 </Breakpoint>
                 <Breakpoint tablet down>
-                        <Headroom>
+                        <Headroom style={{
+                        paddingTop: "30px"
+                    }}>
                             <Logo />
                         </Headroom>
                     <div style={container}>
