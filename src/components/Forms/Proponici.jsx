@@ -29,9 +29,16 @@ const tablet = {
     alignItems: "center"
 }
 const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
+    const formData = new FormData();
+
+    for (const key of Object.keys(data)) {
+        formData.append(key, data[key])
+    }
+
+    return formData;
+    // return Object.keys(data)
+    //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    //     .join("&");
 }
 
 export default class Proponici extends Component {
@@ -41,7 +48,7 @@ export default class Proponici extends Component {
 
         this.state = {
             name: '',
-            tel: null,
+            tel: '',
             email: '',
             tipoOfferente: 'default',
             address: '',
@@ -51,7 +58,7 @@ export default class Proponici extends Component {
             rProposta: '',
             cannaFumaria: '',
             cannaInstall: '',
-            file: [], //no idea dude
+            file: '', //no idea dude
             totaleAffitto: '',
             surface: '',
             vetrine: '',
@@ -66,14 +73,10 @@ export default class Proponici extends Component {
     }
 
     handleChange = (event) => {
-        if (event.target.name === 'file') {
-            this.setState({ file: this.fileInput.current.files[0] });
-        } else if(event.target.name === 'terms') {
+        if(event.target.name === 'terms') {
             if (this.state.terms === 'on') {
-                console.log('first')
                 this.setState({ terms: 'off' })
             } else {
-                console.log('second')
                 this.setState({ terms: event.target.value })
             }
         } else {
@@ -81,16 +84,22 @@ export default class Proponici extends Component {
         }
     }
 
+    handleAttachment = e => {
+        this.setState({ [e.target.name]: e.target.files[0] })
+    }
+
     handleSubmit = (event) => {
+        event.preventDefault();
+        const form = event.target;
         fetch("/", {
             method: "POST",
-            headers: { "Content-Type": "multipart/form-data" },
-            body: encode({ "form-name": "proponici", ...this.state })
+            // headers: { "Content-Type": "multipart/form-data" },
+            body: encode({ "form-name": form.getAttribute("proponici"), ...this.state })
         })
             .then(() => alert("Success!"))
             .then(() => this.setState({ 
                 name: '',
-                tel: null,
+                tel: '',
                 email: '',
                 tipoOfferente: 'default',
                 address: '',
@@ -100,7 +109,7 @@ export default class Proponici extends Component {
                 rProposta: '',
                 cannaFumaria: '',
                 cannaInstall: '',
-                file: [], //no idea dude
+                file: '', //no idea dude
                 totaleAffitto: '',
                 surface: '',
                 vetrine: '',
@@ -108,7 +117,6 @@ export default class Proponici extends Component {
                 terms: '' 
             }))
             .catch(error => alert(error));
-        event.preventDefault();
     }
 
     render() {
@@ -203,8 +211,12 @@ export default class Proponici extends Component {
                                 </div>
                                 <div className="">
                                     <label htmlFor="file" className="fl w-100 f2 fw4 b db mb2 mh5">DESIDERA INVIARE PLANIMETRIE O PDF?</label>
-                                    <input className="mh5" type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" ref={this.fileInput} onChange={this.handleChange}/>
+                                    <input className="mh5" type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" onChange={this.handleAttachment}/>
                                 </div>
+                                {/* <div className="">
+                                    <label htmlFor="file" className="fl w-100 f2 fw4 b db mb2 mh5">DESIDERA INVIARE PLANIMETRIE O PDF?</label>
+                                    <input className="mh5" type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" ref={this.fileInput} onChange={this.handleChange}/>
+                                </div> */}
                             </div>
                             <div className="fl w-50" style={{ display: this.state.isToggle ? 'block' : 'none' }}>
                                 <div className="">
