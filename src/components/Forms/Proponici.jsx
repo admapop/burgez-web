@@ -213,10 +213,6 @@ export default class Proponici extends Component {
                                     <label htmlFor="file" className="fl w-100 f2 fw4 b db mb2 mh5">DESIDERA INVIARE PLANIMETRIE O PDF?</label>
                                     <input className="mh5" type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" onChange={this.handleAttachment}/>
                                 </div>
-                                {/* <div className="">
-                                    <label htmlFor="file" className="fl w-100 f2 fw4 b db mb2 mh5">DESIDERA INVIARE PLANIMETRIE O PDF?</label>
-                                    <input className="mh5" type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" ref={this.fileInput} onChange={this.handleChange}/>
-                                </div> */}
                             </div>
                             <div className="fl w-50" style={{ display: this.state.isToggle ? 'block' : 'none' }}>
                                 <div className="">
@@ -332,7 +328,7 @@ export default class Proponici extends Component {
                             </div>
                             <div className="" style={tablet}>
                                 <label htmlFor="file" className="fl w-90 f2 fw4 b db mb2 ">DESIDERA INVIARE PLANIMETRIE O PDF?</label>
-                                <input className="file" type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" ref={this.fileInput} onChange={this.handleChange} />
+                                <input className="file" type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" onChange={this.handleAttachment} />
                             </div>
 
 
