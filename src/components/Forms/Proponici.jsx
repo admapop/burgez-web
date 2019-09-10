@@ -94,7 +94,7 @@ export default class Proponici extends Component {
         fetch("/", {
             method: "POST",
             // headers: { "Content-Type": "multipart/form-data" },
-            body: encode({ "form-name": form.getAttribute("proponici"), ...this.state })
+            body: encode({ "form-name": form.getAttribute("name"), ...this.state })
         })
             .then(() => alert("Success!"))
             .then(() => this.setState({ 
