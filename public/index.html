@@ -27,6 +27,39 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- A little help for the Netlify post-processing bots -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+    </form>
+    <form name="lavora" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+    </form>
+    <form name="proponici" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="tel" name="tel" />
+      <input type="email" name="email" />
+      <select name="tipoOfferente"></select>
+      <input type="text" name="address" />
+      <input type="text" name="civico" />
+      <input type="text" name="cap" />
+      <input type="text" name="city" />
+      <input type="radio" name="rProposta" />
+      <input type="radio" name="cannaFumaria" />
+      <input type="radio" name="cannaInstall" />
+      <input type="file" name="file" />
+      <input type="text" name="totaleAffitto" />
+      <input type="text" name="surface" />
+      <input type="text" name="vetrine" />
+      <textarea name="message"></textarea>
+      <input type="checkbox" name="terms" />
+    </form>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.

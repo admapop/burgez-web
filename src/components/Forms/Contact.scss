@@ -59,6 +59,9 @@ label {
     font-size: 2rem;
     font-weight: 800;
     font-style: italic;
+    @media only screen and (min-width: 1025px) {
+        margin-right: 4.5vw;
+    }
     margin-right: 3.5vw;
     &:hover {
         color: black;
