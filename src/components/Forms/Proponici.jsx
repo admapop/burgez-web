@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component, useCallback } from 'react'
+import Dropzone from 'react-dropzone';
 import { Breakpoint } from 'react-socks';
 import Headroom from 'react-headroom'
 import Logo from '../Logo/Logo';
@@ -51,7 +52,7 @@ export default class Proponici extends Component {
             rProposta: '',
             cannaFumaria: '',
             cannaInstall: '',
-            file: [], //no idea dude
+            file: {}, //no idea dude
             totaleAffitto: '',
             surface: '',
             vetrine: '',
@@ -67,7 +68,8 @@ export default class Proponici extends Component {
 
     handleChange = (event) => {
         if (event.target.name === 'file') {
-            this.setState({ file: this.fileInput.current.files[0] });
+            console.log('handlechange hit')
+            // this.setState({ file: this.fileInput.current.files[0] });
         } else if(event.target.name === 'terms') {
             if (this.state.terms === 'on') {
                 console.log('first')
@@ -90,7 +92,7 @@ export default class Proponici extends Component {
             .then(() => alert("Success!"))
             .then(() => this.setState({ 
                 name: '',
-                tel: null,
+                tel: '',
                 email: '',
                 tipoOfferente: 'default',
                 address: '',
@@ -100,7 +102,7 @@ export default class Proponici extends Component {
                 rProposta: '',
                 cannaFumaria: '',
                 cannaInstall: '',
-                file: [], //no idea dude
+                file: '', 
                 totaleAffitto: '',
                 surface: '',
                 vetrine: '',
@@ -201,10 +203,21 @@ export default class Proponici extends Component {
                                         <label htmlFor="sennofumario" className="w-25 radio-b">No</label>
                                     </div>
                                 </div>
-                                <div className="">
+                                <Dropzone onDrop={acceptedFiles => {
+                                    console.log(acceptedFiles)
+                                    this.setState({file: acceptedFiles[0]})
+                                }}>
+                                    {({getRootProps, getInputProps}) => (
+                                        <div {...getRootProps()}>
+                                            <label htmlFor="file" className="fl w-100 f2 fw4 b db mb2 mh5">DESIDERA INVIARE PLANIMETRIE O PDF?</label>
+                                            <input className="mh5" type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" {...getInputProps()}/>
+                                        </div>
+                                    )}
+                                </Dropzone>
+                                {/* <div className="">
                                     <label htmlFor="file" className="fl w-100 f2 fw4 b db mb2 mh5">DESIDERA INVIARE PLANIMETRIE O PDF?</label>
                                     <input className="mh5" type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" ref={this.fileInput} onChange={this.handleChange}/>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="fl w-50" style={{ display: this.state.isToggle ? 'block' : 'none' }}>
                                 <div className="">
