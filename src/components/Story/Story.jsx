@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Breakpoint from 'react-socks';
 import './Story.scss'
-import Headroom from 'react-headroom'
+import Headroom from '../../react-headroom'
 import Logo from '../Logo/Logo'
 
 const mobileStyle = {

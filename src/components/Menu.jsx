@@ -4,7 +4,7 @@ import { Breakpoint } from 'react-socks';
 import 'tachyons';
 import './Menu.scss'
 import MenuContent from './MenuContent/MenuContent'
-import Headroom from 'react-headroom'
+import Headroom from '../react-headroom'
 import Logo from './Logo/Logo';
 import LogoMain from './Logo/LogoMain';
 

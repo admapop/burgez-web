@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Breakpoint } from 'react-socks';
 import 'tachyons';
 import './Locations.scss'
-import Headroom from 'react-headroom'
+import Headroom from '../../react-headroom'
 import Logo from '../Logo/Logo'
 import Modal from 'react-responsive-modal'
 

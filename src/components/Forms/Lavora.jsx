@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 import { Breakpoint } from 'react-socks';
-import Headroom from 'react-headroom'
+import Headroom from '../../react-headroom'
 import Logo from '../Logo/Logo';
 
 import './Lavora.scss'
 
 const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
+    const formData = new FormData();
+
+    for (const key of Object.keys(data)) {
+        formData.append(key, data[key])
+    }
+
+    return formData;
 }
 
 export default class Lavora extends Component {
@@ -19,7 +23,8 @@ export default class Lavora extends Component {
             name: '',
             email: '',
             subject: '',
-            message: ''
+            message: '', 
+            file: ''
         }
     }
 
@@ -27,7 +32,12 @@ export default class Lavora extends Component {
         this.setState({ [event.target.name]: event.target.value });
     }
 
+    handleAttachment = e => {
+        this.setState({ [e.target.name]: e.target.files[0] })
+    }
+
     handleSubmit = (event) => {
+        event.preventDefault();
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -36,7 +46,6 @@ export default class Lavora extends Component {
             .then(() => alert("Success!"))
             .then(() => this.setState({ name: '', email: '', subject: '', message: '' }))
             .catch(error => alert(error));
-        event.preventDefault();
     }
 
     render() {
