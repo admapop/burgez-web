@@ -2,23 +2,16 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import { Breakpoint } from 'react-socks';
-// import './hamburgermenu.css'
-
 
 export default class Navbar extends Component {
     render() {
         return (
             <nav>
-                {/* <div className="hamburger-container">
-                    <ul className="hamburger">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div> */}
                 <Breakpoint desktop only>
                 <ul className="navbar" id="menuu">
                     <li><NavLink exact to="/menu" activeClassName="active">MENÙ</NavLink></li>
+                    <li className="separator"><span className="circle"></span></li>
+                    <li><NavLink exact to="/burgers" activeClassName="active">BURGERS</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
                     <li><NavLink exact to="/story" activeClassName="active">STORY</NavLink></li>
                     <li className="separator"><span className="circle"></span></li>
