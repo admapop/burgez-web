@@ -14,6 +14,7 @@ import Proponici from './components/Forms/Proponici';
 import Lavora from './components/Forms/Lavora';
 import Sidebar from './components/Navbar/Sidebar';
 import Creativity from './components/Creativity/Creativity';
+import Burgers from './components/MenuContent/Burgers';
 
 import "./App.scss";
 
@@ -42,6 +43,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Main} />
               <Route exact path="/menu" component={Menu} />
+              <Route exact path="/burgers" component={Burgers} />
               <Route exact path="/story" component={Story} />
               <Route exact path="/locations" component={Locations} />
               <Route exact path="/creativity" component={Creativity} />

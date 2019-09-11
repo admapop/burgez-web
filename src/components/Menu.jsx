@@ -63,14 +63,14 @@ export default class Menu extends Component {
                     </div>
                     </div>
                 </Breakpoint>
-                <Breakpoint tablet up>
+                <Breakpoint tablet only>
                     <Breakpoint tablet only>
                         {/* <Headroom wrapperStyle={{background: "#3ae5fd", zIndex: "100"}}>
                             <Logo />
                         </Headroom> */}
                         <LogoMain />
                     </Breakpoint>
-                <Carousel ref={this.carousel} emulateTouch showThumbs={false} showStatus={false} stopOnHover={true} autoPlay={true} interval={5000} dynamicHeight={false} showIndicators={false} transitionTime={400} useKeyboardArrows={true}>
+                <Carousel ref={this.carousel} emulateTouch showThumbs={false} showStatus={false} stopOnHover={false} autoPlay={true} interval={5000} dynamicHeight={false} showIndicators={false} transitionTime={400} useKeyboardArrows={true}>
                     <div className="container">
                         <Breakpoint tablet only>
                             <div id="mobile-container" style={{height: "80vh"}}>
@@ -246,8 +246,48 @@ export default class Menu extends Component {
                                 <div className="fl w-15" id="milkprice"><p>5.00</p></div>
                             </div>
                         </Breakpoint>
-                        <Breakpoint desktop only>
-                            <div className="fl w-40">
+                    </div>
+                    <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Hamburger.png")} alt="" />
+                        </Breakpoint>
+                    </div>
+                    <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Cheeseburger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                    </div>
+                    <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Smoke_Burger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                    </div>
+                    <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Big_Burger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                    </div>
+                    <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Triple_Big_Burger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                    </div>
+                    <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Chicken_Burger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                    </div>
+                    <div>
+                        <Breakpoint tablet only>
+                        <img src={require("../assets/Menu/Tablet/Double_Cheeseburger_Tablet.png")} alt="" />
+                        </Breakpoint>
+                    </div>
+                </Carousel>
+                </Breakpoint>
+                <Breakpoint desktop only>
+                <div className="container" style={{overflow: "hidden"}}>
+                    <Breakpoint desktop only>
+                    <div className="fl w-40" style={{background: "#3ae5fd"}}>
                                 <div id="desktop-container">
                                     <div className="hamburgez fl w-100"><strong>HAMBURGEZ</strong></div>
                                     <div className="burgers fl w-25">
@@ -362,7 +402,7 @@ export default class Menu extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="fl w-20">
+                            <div className="fl w-20" style={{background: "#3ae5fd"}}>
                                 <div className="middle" id="desktop-container">
                                     <div className="fl w-70" id="menubox">
                                         <h1>MENÙ</h1>
@@ -382,7 +422,7 @@ export default class Menu extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="fl w-40">
+                            <div className="fl w-40" style={{background: "#3ae5fd"}}>
                                 <div id="desktop-container">
                                     <div className="hotdog fl w-100"><strong id="hotdog">HOZ DOG</strong></div>
                                     <div className="hotdog-list fl w-40">
@@ -439,67 +479,9 @@ export default class Menu extends Component {
                                     <div className="fl w-15" id="milkprice"><p>5.00</p></div>
                                 </div>
                             </div>
-                        </Breakpoint>
-                    </div>
-                    <div>
-                        <Breakpoint tablet only>
-                        <img src={require("../assets/Menu/Tablet/Hamburger.png")} alt="" />
-                        </Breakpoint>
-                        <Breakpoint desktop only>
-                            <img src={require("../assets/Menu/burgez-10_2.png")} alt="" />
-                        </Breakpoint>
-                    </div>
-                    <div>
-                        <Breakpoint tablet only>
-                        <img src={require("../assets/Menu/Tablet/Cheeseburger_Tablet.png")} alt="" />
-                        </Breakpoint>
-                        <Breakpoint desktop only>
-                        <img src={require("../assets/Menu/burgez-11.png")} alt="" />
-                        </Breakpoint>
-                    </div>
-                    <div>
-                        <Breakpoint tablet only>
-                        <img src={require("../assets/Menu/Tablet/Smoke_Burger_Tablet.png")} alt="" />
-                        </Breakpoint>
-                        <Breakpoint desktop only>
-                        <img src={require("../assets/Menu/burgez-12.png")} alt="" />                            
-                        </Breakpoint>
-                    </div>
-                    <div>
-                        <Breakpoint tablet only>
-                        <img src={require("../assets/Menu/Tablet/Big_Burger_Tablet.png")} alt="" />
-                        </Breakpoint>
-                        <Breakpoint desktop only>
-                        <img src={require("../assets/Menu/burgez-13.png")} alt="" />
-                        </Breakpoint>
-                    </div>
-                    <div>
-                        <Breakpoint tablet only>
-                        <img src={require("../assets/Menu/Tablet/Triple_Big_Burger_Tablet.png")} alt="" />
-                        </Breakpoint>
-                        <Breakpoint desktop only>
-                        <img src={require("../assets/Menu/burgez-14.png")} alt="" />
-                        </Breakpoint>
-                    </div>
-                    <div>
-                        <Breakpoint tablet only>
-                        <img src={require("../assets/Menu/Tablet/Chicken_Burger_Tablet.png")} alt="" />
-                        </Breakpoint>
-                        <Breakpoint desktop only>
-                        <img src={require("../assets/Menu/burgez-15.png")} alt="" />
-                        </Breakpoint>
-                    </div>
-                    <div>
-                        <Breakpoint tablet only>
-                        <img src={require("../assets/Menu/Tablet/Double_Cheeseburger_Tablet.png")} alt="" />
-                        </Breakpoint>
-                        <Breakpoint desktop only>
-                        <img src={require("../assets/Menu/burgez-16.png")} alt="" />
-                        </Breakpoint>
-                    </div>
-                </Carousel>
+                            </Breakpoint>
+                            </div>
                 </Breakpoint>
-
             </div>
         )
     }

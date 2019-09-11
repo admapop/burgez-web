@@ -198,6 +198,11 @@
 
 #desktop-container {
     top: 10rem;
+    text-align: center;
+    list-style: none;
+    ul {
+        margin: 0;
+    }
     #menubox {
         background: white;
         border: 1px solid #e50746;
