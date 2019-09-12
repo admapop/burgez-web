@@ -70,7 +70,7 @@ export default class Locations extends Component {
                     </div>
                     <div className="location-container fl w-100">
                         <ul className="ulmobile fl w-80">
-                            <li id="title">VIA BARTOLEMEO EUSTACHI 8</li>
+                            <li id="title">VIA BARTOLOMEO EUSTACHI 8</li>
                             <li>Zona Porta Venezia. Tra Corso Buenos Aires e Viale Abruzzi.</li>
                             <li>Metro Rossa Porta Venezia o Lima.</li>
                             <li>DALLA DOMENICA AL GIOVEDì</li>
@@ -128,7 +128,6 @@ export default class Locations extends Component {
                             <li>Zona Colonne di San Lorenzo. Tram 3, Tram 2.</li>
                             <li>7/7</li>
                             <li>12:00-01:00</li>
-                            <a href="#iframe5" rel="modal:open">VIEW ON MAPS</a>
                         </ul>
                         <div className="fl w-5 map-container">
                             <a><img onClick={() => this.onOpenModal(5)} className="" id="map" src={require("../../assets/map.png")} alt="" style={{width: "8vw"}}/></a>
@@ -140,8 +139,7 @@ export default class Locations extends Component {
                         <div className="location-container fl w-100">
                         <ul className="ulmobile fl w-80">
                             <li id="title">CORSO COMO 2</li>
-                            <li>Apriamo a Settembre</li>
-                            <a href="#iframe6" rel="modal:open">VIEW ON MAPS</a>
+                            <li>Apriamo a Ottobre</li>
                         </ul>
                         <div className="fl w-5 map-container">
                             <a><img onClick={() => this.onOpenModal(6)} className="" id="map" src={require("../../assets/map.png")} alt="" style={{width: "8vw"}}/></a>
@@ -150,11 +148,10 @@ export default class Locations extends Component {
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.4340398893505!2d9.185143815961318!3d45.48120367910125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c13490d3f921%3A0xa4890ac82b365745!2sCorso+Como%2C+2%2C+20154+Milano+MI!5e0!3m2!1sit!2sit!4v1564393459600!5m2!1sit!2sit" width="300" height="300" frameborder="0" style={{ border: 0 }} allowfullscreen></iframe>
                         </Modal>
                         </div>
-                        <div className="location-container fl w-100">
+                        <div className="location-container fl w-100" style={{paddingBottom: "7rem"}}>
                         <ul className="ulmobile fl w-80">
                             <li id="title">VIALE BLIGNY 2</li>
-                            <li>Apriamo a Ottobre</li>
-                            <a href="#iframe7" rel="modal:open">VIEW ON MAPS</a>
+                            <li>Apriamo a Novembre</li>
                         </ul>
                         <div className="fl w-5 map-container">
                             <a><img onClick={() => this.onOpenModal(7)} className="" id="map" src={require("../../assets/map.png")} alt="" style={{width: "8vw"}}/></a>
@@ -162,12 +159,6 @@ export default class Locations extends Component {
                         <Modal open={this.state.open7} onClose={() => this.onCloseModal(7)} center>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.9056936603256!2d9.18478781596055!3d45.45155647910086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c405b9bd60f1%3A0x8ed2cad8bb177c48!2sViale+Bligny%2C+2%2C+20136+Milano+MI!5e0!3m2!1sit!2sit!4v1564393533601!5m2!1sit!2sit" width="300" height="300" frameborder="0" style={{ border: 0 }} allowfullscreen></iframe>
                         </Modal>
-                        </div>
-                        <div className="location-container fl w-100" style={{paddingBottom: "7rem"}}>
-                        <ul className="ulmobile fl w-80">
-                            <li id="title">VIA VIGEVANO</li>
-                            <li>SOON</li>
-                        </ul>
                         </div>
                     </div>
                 </Breakpoint>
@@ -198,7 +189,7 @@ export default class Locations extends Component {
                             </div>
                             <div className="location-container fl w-100">
                             <ul>
-                                <li id="title">VIA BARTOLEMEO EUSTACHI 8</li>
+                                <li id="title">VIA BARTOLOMEO EUSTACHI 8</li>
                                 <li>Zona Porta Venezia. Tra Corso Buenos Aires e Viale Abruzzi.</li>
                                 <li>Metro Rossa Porta Venezia o Lima.</li>
                                 <li>DALLA DOMENICA AL GIOVEDì</li>
@@ -269,7 +260,7 @@ export default class Locations extends Component {
                             <div className="location-container fl w-100">
                             <ul className="fl w-80">
                                 <li id="title">CORSO COMO 2</li>
-                                <li>Apriamo a Settembre</li>
+                                <li>Apriamo a Ottobre</li>
                             </ul>
                             <div className="fl w-5 map-container">
                                 <a><img onClick={() => this.onOpenModal(6)} className="" id="map" src={require("../../assets/map.png")} alt="" style={{width: "7vw"}}/></a>
@@ -281,7 +272,7 @@ export default class Locations extends Component {
                             <div className="location-container fl w-100">
                             <ul className="fl w-80">
                                 <li id="title">VIALE BLIGNY 2</li>
-                                <li>Apriamo a Ottobre</li>
+                                <li>Apriamo a Novembre</li>
                             </ul>
                             <div className="fl w-5 map-container">
                                 <a><img onClick={() => this.onOpenModal(7)} className="" id="map" src={require("../../assets/map.png")} alt="" style={{width: "7vw"}}/></a>
@@ -290,10 +281,6 @@ export default class Locations extends Component {
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.9056936603256!2d9.18478781596055!3d45.45155647910086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c405b9bd60f1%3A0x8ed2cad8bb177c48!2sViale+Bligny%2C+2%2C+20136+Milano+MI!5e0!3m2!1sit!2sit!4v1564393533601!5m2!1sit!2sit" width="600" height="450" frameborder="0" style={{ border: 0 }} allowfullscreen></iframe>
                             </Modal>
                             </div>
-                            <ul>
-                                <li id="title">VIA VIGEVANO</li>
-                                <li>SOON</li>
-                            </ul>
                         </div>
                     </div>
                 </Breakpoint>
@@ -318,7 +305,7 @@ export default class Locations extends Component {
                         </div>
                         <div className="location-container fl w-100">
                             <ul className="fl w-80">
-                                <li id="title">VIA BARTOLEMEO EUSTACHI 8</li>
+                                <li id="title">VIA BARTOLOMEO EUSTACHI 8</li>
                                 <li>Zona Porta Venezia. Tra Corso Buenos Aires e Viale Abruzzi.</li>
                                 <li>Metro Rossa Porta Venezia o Lima.</li>
                                 <li>DALLA DOMENICA AL GIOVEDì</li>
@@ -401,7 +388,7 @@ export default class Locations extends Component {
                         <div className="location-container fl w-100">
                             <ul className="fl w-80">
                                 <li id="title">VIALE BLIGNY 2</li>
-                                <li>Apriamo a Ottobre</li>
+                                <li>Apriamo a Novembre</li>
                             </ul>
                             <div className="fl w-5 map-container">
                                 <a><img onClick={() => this.onOpenModal(7)} className="" id="map" src={require("../../assets/map.png")} alt="" /></a>
@@ -409,15 +396,6 @@ export default class Locations extends Component {
                             <Modal open={this.state.open7} onClose={() => this.onCloseModal(7)} center>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.9056936603256!2d9.18478781596055!3d45.45155647910086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c405b9bd60f1%3A0x8ed2cad8bb177c48!2sViale+Bligny%2C+2%2C+20136+Milano+MI!5e0!3m2!1sit!2sit!4v1564393533601!5m2!1sit!2sit" width="600" height="450" frameborder="0" style={{ border: 0 }} allowfullscreen></iframe>
                             </Modal>
-                        </div>
-                        <div className="location-container fl w-100">
-                            <ul className="fl w-80">
-                                <li id="title">VIA VIGEVANO</li>
-                                <li>SOON</li>
-                            </ul>
-                            {/* <div className="fl w-5 map-container">
-                                <a><img onClick={() => this.onOpenModal(8)} className="" id="map" src={require("../../assets/map.png")} alt="" /></a>
-                            </div> */}
                         </div>
                     </div>
                 </Breakpoint>
