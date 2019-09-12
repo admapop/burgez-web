@@ -38,13 +38,14 @@ export default class Lavora extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
+        const form = event.target;
         fetch("/", {
             method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "lavora", ...this.state })
+            // headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": form.getAttribute("name"), ...this.state })
         })
             .then(() => alert("Success!"))
-            .then(() => this.setState({ name: '', email: '', subject: '', message: '' }))
+            .then(() => this.setState({ name: '', email: '', subject: '', message: '', file: '' }))
             .catch(error => alert(error));
     }
 
@@ -86,11 +87,11 @@ export default class Lavora extends Component {
                                 <form name="lavora" onSubmit={this.handleSubmit}>
                                     <div className="desktop">
                                         <label htmlFor="name" className="fl w-90 f2 fw4 b db mb2 ">NOME E COGNOME</label>
-                                        <input className="w-100 bn pv2" type="text" name="name" id="name" value={name} onChange={this.handleChange} />
+                                        <input className="w-100 bn pv2" type="text" name="name" id="name" value={name} onChange={this.handleChange} required />
                                     </div>
                                     <div className="desktop">
                                         <label htmlFor="email" className="fl w-90 f2 fw4 b db mb2 ">EMAIL</label>
-                                        <input className="w-100 bn pv2" type="email" name="email" id="email" value={email} onChange={this.handleChange} />
+                                        <input className="w-100 bn pv2" type="email" name="email" id="email" value={email} onChange={this.handleChange} required />
                                     </div>
                                     <div className="desktop">
                                         <label htmlFor="subject" className="fl w-90 f2 fw4 b db mb2 ">OGGETTO</label>
@@ -99,6 +100,10 @@ export default class Lavora extends Component {
                                     <div className="desktop">
                                         <label htmlFor="message" className="fl w-90 f2 fw4 b db mb2 ">MESSAGGIO</label>
                                         <textarea className="w-100 bn pv2" type="text" name="message" id="message" value={message} onChange={this.handleChange} />
+                                    </div>
+                                    <div className="">
+                                        <label htmlFor="file" className="fl w-100 f2 fw4 b db mb2">CARICA IL TUO CV</label>
+                                        <input type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" onChange={this.handleAttachment} required />
                                     </div>
                                     <div><input className="fr" type="submit" value="INVIA" id="submit" /></div>
                                 </form>
@@ -157,6 +162,10 @@ export default class Lavora extends Component {
                             <div className="tablet">
                                 <label htmlFor="message" className="fl w-90 f2 fw4 b db mb2">MESSAGGIO</label>
                                 <textarea className="w-100 bn pv2" type="text" name="message" id="message" value={message} onChange={this.handleChange} required />
+                            </div>
+                            <div className="tablet">
+                                <label htmlFor="file" className="fl w-90 f2 fw4 b db mb2">CARICA IL TUO CV</label>
+                                <input className='ml4' type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf" onChange={this.handleAttachment} required />
                             </div>
                             <div><input className="fr" type="submit" value="INVIA" id="submit" /></div>
                         </form>
