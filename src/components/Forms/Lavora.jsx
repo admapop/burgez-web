@@ -95,11 +95,11 @@ export default class Lavora extends Component {
                                     </div>
                                     <div className="desktop">
                                         <label htmlFor="subject" className="fl w-90 f2 fw4 b db mb2 ">OGGETTO</label>
-                                        <input className="w-100 bn pv2" type="text" name="subject" id="subject" value={subject} onChange={this.handleChange} />
+                                        <input className="w-100 bn pv2" type="text" name="subject" id="subject" value={subject} onChange={this.handleChange} required />
                                     </div>
                                     <div className="desktop">
                                         <label htmlFor="message" className="fl w-90 f2 fw4 b db mb2 ">MESSAGGIO</label>
-                                        <textarea className="w-100 bn pv2" type="text" name="message" id="message" value={message} onChange={this.handleChange} />
+                                        <textarea className="w-100 bn pv2" type="text" name="message" id="message" value={message} onChange={this.handleChange} required />
                                     </div>
                                     <div className="">
                                         <label htmlFor="file" className="fl w-100 f2 fw4 b db mb2">CARICA IL TUO CV</label>
