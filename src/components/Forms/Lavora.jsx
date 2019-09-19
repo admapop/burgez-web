@@ -104,7 +104,8 @@ export default class Lavora extends Component {
         fetch("/", {
             method: "POST",
             // headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": form.getAttribute("name"), "name": this.state.name, "email": this.state.email, "subject": this.state.subject, "message": this.state.message, "fileUrl": this.state.fileUrl })
+            body: encode({ "form-name": form.getAttribute("name"), ...this.state })
+            // body: encode({ "form-name": form.getAttribute("name"), "name": this.state.name, "email": this.state.email, "subject": this.state.subject, "message": this.state.message, "fileUrl": this.state.fileUrl })
         })
             .then(() => alert("Success!"))
             .then(() => this.setState({ name: '', email: '', subject: '', message: '', file: '', fileUrl: '' }))
