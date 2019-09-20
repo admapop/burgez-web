@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Breakpoint } from 'react-socks';
 import Headroom from '../../react-headroom'
 import Logo from '../Logo/Logo';
+import {storageRef} from '../../firebase/firebase.utils'
 
 import './Lavora.scss'
 
@@ -24,8 +25,39 @@ export default class Lavora extends Component {
             email: '',
             subject: '',
             message: '', 
-            file: ''
+            file: '',
+            fileUrl: ''
         }
+    }
+
+    // uploadFile = (file, callback) => {
+    //     const uploadTask = storageRef.child(`cv/${this.state.file.name}`).put(this.state.file);
+    //     console.log(uploadTask.snapshot.downloadURL)
+    //     uploadTask.on('state_changed', (snapshot) => {
+    //         let progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+    //         console.log(`Upload is ${progress}% done`);
+    //     }, (error) => {
+    //         console.log(error);
+    //     }, () => {
+    //         console.log('file successfully uploaded');
+    //     })
+    // }
+
+    uploadFile = (file, callback) => {
+        const fileName = file.name;
+        const uploadTask = storageRef.child(`cv/${fileName}`).put(file);
+        uploadTask.on('state_changed', snapshot => {
+            let progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+            callback({progress})
+            // console.log(`Upload is ${progress}% done`);
+        }, error => {
+            callback({error})
+            // console.log(error);
+        }, () => {
+            let downloadURL = uploadTask.snapshot.ref.getDownloadURL()
+            callback({downloadURL})
+            // console.log('file successfully uploaded');
+        })
     }
 
     handleChange = (event) => {
@@ -33,8 +65,38 @@ export default class Lavora extends Component {
     }
 
     handleAttachment = e => {
-        this.setState({ [e.target.name]: e.target.files[0] })
+        const file = e.target.files[0]
+        this.setState({ [e.target.name]: file })
+        this.uploadFile(file, result => {
+            if (result.progress) {
+                console.log(result.progress);
+                // console.log(`Upload is ${progress}% done`);
+                return;
+            }
+
+            if (result.downloadURL) {
+                result.downloadURL.then(downloadURL => this.setState({ fileUrl: downloadURL}))
+            }
+
+            if (result.error) {
+                console.log(result.error)
+            }
+        })
     }
+
+    // handleAttachment = e => {
+    // const uploadTask = storageRef.child(`cv/${e.target.name}`).put(e.target.files[0]);
+
+    // uploadTask.on('state_changed', (snapshot) => {
+    //     let progress = (snapshot.bytesTransferred / snapshot.totalBytes) *100;
+    //     console.log(`Upload is ${progress}% done`);
+    // }, (error) => {
+    //     console.log(error);
+    // }, () => {
+    //     console.log('file successfully uploaded');
+    // })
+
+    // }
 
     handleSubmit = (event) => {
         event.preventDefault();
@@ -43,10 +105,11 @@ export default class Lavora extends Component {
             method: "POST",
             // headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": form.getAttribute("name"), ...this.state })
+            // body: encode({ "form-name": form.getAttribute("name"), "name": this.state.name, "email": this.state.email, "subject": this.state.subject, "message": this.state.message, "fileUrl": this.state.fileUrl })
         })
             .then(() => alert("Success!"))
-            .then(() => this.setState({ name: '', email: '', subject: '', message: '', file: '' }))
-            .catch(error => alert(error));
+            .then(() => this.setState({ name: '', email: '', subject: '', message: '', file: '', fileUrl: '' }))
+            .catch(error => alert(error))
     }
 
     render() {
