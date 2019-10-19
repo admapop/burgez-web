@@ -56,6 +56,7 @@ export default class Proponici extends Component {
             cannaFumaria: '',
             cannaInstall: '',
             file: '', //no idea dude
+            fileUrl: '',
             totaleAffitto: '',
             surface: '',
             vetrine: '',
@@ -68,6 +69,8 @@ export default class Proponici extends Component {
     handleClick(e) {
         this.setState({ isToggle: !this.state.isToggle });
     }
+
+    
 
     handleChange = (event) => {
         if(event.target.name === 'terms') {

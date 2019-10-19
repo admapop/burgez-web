@@ -139,7 +139,14 @@ export default class Locations extends Component {
                         <div className="location-container fl w-100">
                         <ul className="ulmobile fl w-80">
                             <li id="title">CORSO COMO 2</li>
-                            <li>Apriamo a Ottobre</li>
+                            <li>Zona Porta Garibaldi.</li>
+                            <li>7/7</li>
+                            <li>LUNEDì E MARTEDì</li>
+                            <li>12:00-00:00</li>
+                            <li>MERCOLEDì E GIOVEDì</li>
+                            <li>12:00-02:00</li>
+                            <li>DAL VENERDì A DOMENICA</li>
+                            <li>12:00-04:00</li>
                         </ul>
                         <div className="fl w-5 map-container">
                             <a><img onClick={() => this.onOpenModal(6)} className="" id="map" src={require("../../assets/map.png")} alt="" style={{width: "8vw"}}/></a>
@@ -260,7 +267,14 @@ export default class Locations extends Component {
                             <div className="location-container fl w-100">
                             <ul className="fl w-80">
                                 <li id="title">CORSO COMO 2</li>
-                                <li>Apriamo a Ottobre</li>
+                                <li>Zona Porta Garibaldi.</li>
+                                <li>7/7</li>
+                                <li>LUNEDì E MARTEDì</li>
+                                <li>12:00-00:00</li>
+                                <li>MERCOLEDì E GIOVEDì</li>
+                                <li>12:00-02:00</li>
+                                <li>DAL VENERDì A DOMENICA</li>
+                                <li>12:00-04:00</li>
                             </ul>
                             <div className="fl w-5 map-container">
                                 <a><img onClick={() => this.onOpenModal(6)} className="" id="map" src={require("../../assets/map.png")} alt="" style={{width: "7vw"}}/></a>
@@ -376,7 +390,14 @@ export default class Locations extends Component {
                         <div className="location-container fl w-100">
                             <ul className="fl w-80">
                                 <li id="title">CORSO COMO 2</li>
-                                <li>Apriamo a Ottobre</li>
+                                <li>Zona Porta Garibaldi.</li>
+                                <li>7/7</li>
+                                <li>LUNEDì E MARTEDì</li>
+                                <li>12:00-00:00</li>
+                                <li>MERCOLEDì E GIOVEDì</li>
+                                <li>12:00-02:00</li>
+                                <li>DAL VENERDì A DOMENICA</li>
+                                <li>12:00-04:00</li>
                             </ul>
                             <div className="fl w-5 map-container">
                                 <a><img onClick={() => this.onOpenModal(6)} className="" id="map" src={require("../../assets/map.png")} alt="" /></a>
