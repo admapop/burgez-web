@@ -208,7 +208,10 @@ export default class Menu extends Component {
                                     </ul>
                                 </div>
                                 <div className="fl w-10">
-                                    <p id="hotprice">4.00</p>
+                                    <p id="hotprice">4.80</p>
+                                    <p id="hotprice">5.00</p>
+                                    <p id="hotprice">5.20</p>
+                                    <p id="hotprice">5.60</p>
                                 </div>
                                 <div className="fries fl w-100"><strong>FRIES</strong></div>
                                 <div className="fries-list fl w-70">
@@ -442,7 +445,10 @@ export default class Menu extends Component {
                                         </ul>
                                     </div>
                                     <div className="fl w-10">
-                                        <p id="hotprice">4.00</p>
+                                        <p id="hotprice">4.80</p>
+                                        <p id="hotprice">5.00</p>
+                                        <p id="hotprice">5.20</p>
+                                        <p id="hotprice">5.60</p>
                                     </div>
                                     <div className="fries fl w-100"><strong>FRIES</strong></div>
                                     <div className="fries-list fl w-70">
