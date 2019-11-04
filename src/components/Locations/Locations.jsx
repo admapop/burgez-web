@@ -92,13 +92,9 @@ export default class Locations extends Component {
                             <li>Zona MARAV (incrocio MARghera-RAVizza). Metro Rossa</li>
                             <li>Wagner o De Angeli.</li>
                             <li>DAL LUNEDì AL GIOVEDì</li>
-                            <li>12:00-15:00 - 18:00-23:00</li>
-                            <li>VENERDì</li>
-                            <li>12:00-15:00 - 18:00-24:00</li>
-                            <li>SABATO</li>
-                            <li>12:00-24:00</li>
-                            <li>DOMENICA</li>
-                            <li>12:00-23:00</li>
+                            <li>12:00 - 23:00</li>
+                            <li>DAL VENERDì A DOMENICA</li>
+                            <li>12:00 - 24:00</li>
                         </ul>
                         <div className="fl w-5 map-container">
                             <a><img onClick={() => this.onOpenModal(3)} className="" id="map" src={require("../../assets/map.png")} alt="" style={{width: "8vw"}}/></a>
@@ -147,7 +143,7 @@ export default class Locations extends Component {
                             <li>MERCOLEDì E GIOVEDì</li>
                             <li>12:00-02:00</li>
                             <li>DAL VENERDì A DOMENICA</li>
-                            <li>12:00-04:00</li>
+                            <li>12:00-05:00</li>
                         </ul>
                         <div className="fl w-5 map-container">
                             <a><img onClick={() => this.onOpenModal(6)} className="" id="map" src={require("../../assets/map.png")} alt="" style={{width: "8vw"}}/></a>
@@ -156,10 +152,10 @@ export default class Locations extends Component {
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.4340398893505!2d9.185143815961318!3d45.48120367910125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c13490d3f921%3A0xa4890ac82b365745!2sCorso+Como%2C+2%2C+20154+Milano+MI!5e0!3m2!1sit!2sit!4v1564393459600!5m2!1sit!2sit" width="300" height="300" frameborder="0" style={{ border: 0 }} allowfullscreen></iframe>
                         </Modal>
                         </div>
-                        <div className="location-container fl w-100" style={{paddingBottom: "7rem"}}>
+                        <div className="location-container fl w-100">
                         <ul className="ulmobile fl w-80">
                             <li id="title">VIALE BLIGNY 2</li>
-                            <li>Apriamo a Novembre</li>
+                            <li>Apriamo a Dicembre</li>
                         </ul>
                         <div className="fl w-5 map-container">
                             <a><img onClick={() => this.onOpenModal(7)} className="" id="map" src={require("../../assets/map.png")} alt="" style={{width: "8vw"}}/></a>
@@ -168,6 +164,14 @@ export default class Locations extends Component {
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.9056936603256!2d9.18478781596055!3d45.45155647910086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c405b9bd60f1%3A0x8ed2cad8bb177c48!2sViale+Bligny%2C+2%2C+20136+Milano+MI!5e0!3m2!1sit!2sit!4v1564393533601!5m2!1sit!2sit" width="300" height="300" frameborder="0" style={{ border: 0 }} allowfullscreen></iframe>
                         </Modal>
                         </div>
+                        <LocationComponent
+                            title='VIA BERGAMO 1 ANGOLO VIALE MONTENERO 48'
+                            mapPinWidth='6vw'
+                            iframe='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d699.6477975598748!2d9.205877097361311!3d45.45789357587498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI3JzI3LjYiTiA5wrAxMicyMi4xIkU!5e0!3m2!1sen!2sit!4v1572867927630!5m2!1sen!2sit'
+                            style={{paddingBottom: "7rem"}}
+                            >
+                                <li>Apriamo a Dicembre.</li>
+                        </LocationComponent>
                     </div>
                 </Breakpoint>
                 <Breakpoint tablet only>
@@ -210,13 +214,9 @@ export default class Locations extends Component {
                                 <li>Zona MARAV (incrocio MARghera-RAVizza). Metro Rossa</li>
                                 <li>Wagner o De Angeli.</li>
                                 <li>DAL LUNEDì AL GIOVEDì</li>
-                                <li>12:00-15:00 - 18:00-23:00</li>
-                                <li>VENERDì</li>
-                                <li>12:00-15:00 - 18:00-24:00</li>
-                                <li>SABATO</li>
-                                <li>12:00-24:00</li>
-                                <li>DOMENICA</li>
-                                <li>12:00-23:00</li>
+                                <li>12:00 - 23:00</li>
+                                <li>DAL VENERDì A DOMENICA</li>
+                                <li>12:00 - 24:00</li>
                             </LocationComponent>
                         </div>
                         <div className="list fl w-50" style={{marginTop: "0rem"}}>
@@ -252,14 +252,21 @@ export default class Locations extends Component {
                                 <li>MERCOLEDì E GIOVEDì</li>
                                 <li>12:00-02:00</li>
                                 <li>DAL VENERDì A DOMENICA</li>
-                                <li>12:00-04:00</li>
+                                <li>12:00-05:00</li>
                             </LocationComponent>
                             <LocationComponent
                                 title='VIALE BLIGNY 2'
                                 mapPinWidth='6vw'
                                 iframe='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.9056936603256!2d9.18478781596055!3d45.45155647910086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c405b9bd60f1%3A0x8ed2cad8bb177c48!2sViale+Bligny%2C+2%2C+20136+Milano+MI!5e0!3m2!1sit!2sit!4v1564393533601!5m2!1sit!2sit'
                                 >
-                                <li>Apriamo a Novembre</li>
+                                <li>Apriamo a Dicembre</li>
+                            </LocationComponent>
+                            <LocationComponent
+                                title='VIA BERGAMO 1 ANGOLO VIALE MONTENERO 48'
+                                mapPinWidth='6vw'
+                                iframe='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d699.6477975598748!2d9.205877097361311!3d45.45789357587498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI3JzI3LjYiTiA5wrAxMicyMi4xIkU!5e0!3m2!1sen!2sit!4v1572867927630!5m2!1sen!2sit'
+                                >
+                                <li>Apriamo a Dicembre.</li>
                             </LocationComponent>
                         </div>
                     </div>
@@ -306,13 +313,9 @@ export default class Locations extends Component {
                                 <li>Zona MARAV (incrocio MARghera-RAVizza). Metro Rossa</li>
                                 <li>Wagner o De Angeli.</li>
                                 <li>DAL LUNEDì AL GIOVEDì</li>
-                                <li>12:00-15:00 - 18:00-23:00</li>
-                                <li>VENERDì</li>
-                                <li>12:00-15:00 - 18:00-24:00</li>
-                                <li>SABATO</li>
-                                <li>12:00-24:00</li>
-                                <li>DOMENICA</li>
-                                <li>12:00-23:00</li>
+                                <li>12:00 - 23:00</li>
+                                <li>DAL VENERDì A DOMENICA</li>
+                                <li>12:00 - 24:00</li>
                             </ul>
                             <div className="fl w-5 map-container">
                                 <a><img onClick={() => this.onOpenModal(3)} className="" id="map" src={require("../../assets/map.png")} alt="" /></a>
@@ -363,7 +366,7 @@ export default class Locations extends Component {
                                 <li>MERCOLEDì E GIOVEDì</li>
                                 <li>12:00-02:00</li>
                                 <li>DAL VENERDì A DOMENICA</li>
-                                <li>12:00-04:00</li>
+                                <li>12:00-05:00</li>
                             </ul>
                             <div className="fl w-5 map-container">
                                 <a><img onClick={() => this.onOpenModal(6)} className="" id="map" src={require("../../assets/map.png")} alt="" /></a>
@@ -375,7 +378,7 @@ export default class Locations extends Component {
                         <div className="location-container fl w-100">
                             <ul className="fl w-80">
                                 <li id="title">VIALE BLIGNY 2</li>
-                                <li>Apriamo a Novembre</li>
+                                <li>Apriamo a Dicembre</li>
                             </ul>
                             <div className="fl w-5 map-container">
                                 <a><img onClick={() => this.onOpenModal(7)} className="" id="map" src={require("../../assets/map.png")} alt="" /></a>
@@ -384,6 +387,13 @@ export default class Locations extends Component {
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.9056936603256!2d9.18478781596055!3d45.45155647910086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c405b9bd60f1%3A0x8ed2cad8bb177c48!2sViale+Bligny%2C+2%2C+20136+Milano+MI!5e0!3m2!1sit!2sit!4v1564393533601!5m2!1sit!2sit" width="600" height="450" frameborder="0" style={{ border: 0 }} allowfullscreen></iframe>
                             </Modal>
                         </div>
+                        <LocationComponent
+                            title='VIA BERGAMO 1 ANGOLO VIALE MONTENERO 48'
+                            mapPinWidth='3vw'
+                            iframe='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d699.6477975598748!2d9.205877097361311!3d45.45789357587498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI3JzI3LjYiTiA5wrAxMicyMi4xIkU!5e0!3m2!1sen!2sit!4v1572867927630!5m2!1sen!2sit'
+                            >
+                                <li>Apriamo a Dicembre.</li>
+                        </LocationComponent>
                     </div>
                 </Breakpoint>
             </div>

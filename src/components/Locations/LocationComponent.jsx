@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 
 import Modal from 'react-responsive-modal'
 
-const LocationComponent = ({ children, iframe, mapPinWidth, title }) => {
+const LocationComponent = ({ children, iframe, mapPinWidth, title, style }) => {
   const [open, setOpen] = useState(false)
   return (
-    <div className="location-container fl w-100">
+    <div className="location-container fl w-100" style={style}>
       <ul className="fl w-80">
         <li id="title">{title}</li>
         {children}
