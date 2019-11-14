@@ -86,9 +86,9 @@ export default class Menu extends Component {
                                 </div>
                                 <div className="price1 fl w-25">
                                     <ul>
-                                        <li><span>SINGLE</span> <p id="price">5.60</p></li>
-                                        <li><span id="double">DOUBLE</span> <p id="price">7.60</p></li>
-                                        <li><span>TRIPLE</span> <p id="price">9.60</p></li>
+                                        <li><span>SINGLE</span> </li>
+                                        <li><span id="double">DOUBLE</span> </li>
+                                        <li><span>TRIPLE</span> </li>
                                     </ul>
                                 </div>
                                 <div className="menu fl w-25">
@@ -97,9 +97,9 @@ export default class Menu extends Component {
                                 </div>
                                 <div className="price1m fl w-25">
                                     <ul>
-                                        <li><span>SINGLE</span> <p id="price">11.50</p></li>
-                                        <li><span id="double">DOUBLE</span> <p id="price">13.50</p></li>
-                                        <li><span>TRIPLE</span> <p id="price">15.50</p></li>
+                                        <li><span>SINGLE</span> </li>
+                                        <li><span id="double">DOUBLE</span> </li>
+                                        <li><span>TRIPLE</span> </li>
                                     </ul>
                                 </div>
                                 <div className="cheeseburgez fl w-100"><strong>CHEESEBURGEZ</strong></div>
@@ -109,9 +109,9 @@ export default class Menu extends Component {
                                 </div>
                                 <div className="price2 fl w-25" >
                                     <ul>
-                                        <li><span>SINGLE</span> <p id="price">6.10</p></li>
-                                        <li><span id="double">DOUBLE</span> <p id="price">8.10</p></li>
-                                        <li><span>TRIPLE</span> <p id="price">10.10</p></li>
+                                        <li><span>SINGLE</span> </li>
+                                        <li><span id="double">DOUBLE</span> </li>
+                                        <li><span>TRIPLE</span> </li>
                                     </ul>
                                 </div>
                                 <div className="menu fl w-25">
@@ -120,9 +120,9 @@ export default class Menu extends Component {
                                 </div>
                                 <div className="price2m fl w-25">
                                     <ul>
-                                        <li><span>SINGLE</span> <p id="price">12.00</p></li>
-                                        <li><span id="double">DOUBLE</span> <p id="price">14.00</p></li>
-                                        <li><span>TRIPLE</span> <p id="price">16.00</p></li>
+                                        <li><span>SINGLE</span> </li>
+                                        <li><span id="double">DOUBLE</span> </li>
+                                        <li><span>TRIPLE</span> </li>
                                     </ul>
                                 </div>
                                 <div className="smokeburgez fl w-100"><strong>SMOKEBURGEZ</strong></div>
@@ -132,9 +132,9 @@ export default class Menu extends Component {
                                 </div>
                                 <div className="price3 fl w-25" >
                                     <ul>
-                                        <li><span>SINGLE</span> <p id="price">6.30</p></li>
-                                        <li><span id="double">DOUBLE</span> <p id="price">8.30</p></li>
-                                        <li><span>TRIPLE</span> <p id="price">10.30</p></li>
+                                        <li><span>SINGLE</span> </li>
+                                        <li><span id="double">DOUBLE</span> </li>
+                                        <li><span>TRIPLE</span> </li>
                                     </ul>
                                 </div>
                                 <div className="menu fl w-25">
@@ -143,9 +143,9 @@ export default class Menu extends Component {
                                 </div>
                                 <div className="price3m fl w-25">
                                     <ul>
-                                        <li><span>SINGLE</span> <p id="price">12.20</p></li>
-                                        <li><span id="double">DOUBLE</span> <p id="price">14.20</p></li>
-                                        <li><span>TRIPLE</span> <p id="price">16.20</p></li>
+                                        <li><span>SINGLE</span> </li>
+                                        <li><span id="double">DOUBLE</span> </li>
+                                        <li><span>TRIPLE</span> </li>
                                     </ul>
                                 </div>
                                 <div className="bigburgez fl w-100"><strong>BIGBURGEZ</strong></div>
@@ -155,9 +155,9 @@ export default class Menu extends Component {
                                 </div>
                                 <div className="price4 fl w-25" >
                                     <ul>
-                                        <li><span>SINGLE</span> <p id="price">6.90</p></li>
-                                        <li><span id="double">DOUBLE</span> <p id="price">8.80</p></li>
-                                        <li><span>TRIPLE</span> <p id="price">10.60</p></li>
+                                        <li><span>SINGLE</span> </li>
+                                        <li><span id="double">DOUBLE</span> </li>
+                                        <li><span>TRIPLE</span> </li>
                                     </ul>
                                 </div>
                                 <div className="menu fl w-25">
@@ -166,9 +166,9 @@ export default class Menu extends Component {
                                 </div>
                                 <div className="price4m fl w-25">
                                     <ul>
-                                        <li><span>SINGLE</span> <p id="price">12.80</p></li>
-                                        <li><span id="double">DOUBLE</span> <p id="price">14.70</p></li>
-                                        <li><span>TRIPLE</span> <p id="price">16.50</p></li>
+                                        <li><span>SINGLE</span> </li>
+                                        <li><span id="double">DOUBLE</span> </li>
+                                        <li><span>TRIPLE</span> </li>
                                     </ul>
                                 </div>
                                 <div className="chickenburgez fl w-100"><strong>CHICKENBURGEZ</strong></div>
@@ -178,7 +178,7 @@ export default class Menu extends Component {
                                 </div>
                                 <div className="price5 fl w-25" >
                                     <ul>
-                                        <li><p id="pricechick">6.80</p></li>
+                                        <li><p id="pricechick"></p></li>
                                     </ul>
                                 </div>
                                 <div className="menu fl w-25">
@@ -187,7 +187,7 @@ export default class Menu extends Component {
                                 </div>
                                 <div className="price5m fl w-25">
                                     <ul>
-                                        <li><p id="pricechick">12.70</p></li>
+                                        {/* <li><p id="pricechick">12.70</p></li> */}
                                     </ul>
                                 </div>
                                 <div className="hotdog fl w-100"><strong id="hotdog">HOZ DOG</strong></div>
@@ -207,12 +207,12 @@ export default class Menu extends Component {
                                         <li>cheddar cream, bacon, jalapeño</li>
                                     </ul>
                                 </div>
-                                <div className="fl w-10">
+                                {/* <div className="fl w-10">
                                     <p id="hotprice">4.80</p>
                                     <p id="hotprice">5.00</p>
                                     <p id="hotprice">5.20</p>
                                     <p id="hotprice">5.60</p>
-                                </div>
+                                </div> */}
                                 <div className="fries fl w-100"><strong>FRIES</strong></div>
                                 <div className="fries-list fl w-70">
                                     <ul>
@@ -220,12 +220,12 @@ export default class Menu extends Component {
                                         <li>CHEESEFRIES</li>
                                     </ul>
                                 </div>
-                                <div className="fl w-30">
+                                {/* <div className="fl w-30">
                                     <ul>
                                         <li id="price">3.00</li>
                                         <li id="price">4.00</li>
                                     </ul>
-                                </div>
+                                </div> */}
                                 <div className="drinks fl w-100"><strong>DRINKS</strong></div>
                                 <div className="drinks-list fl w-70">
                                     <ul>
@@ -234,19 +234,19 @@ export default class Menu extends Component {
                                         <li>ACQUA</li>
                                     </ul>
                                 </div>
-                                <div className="fl w-30">
+                                {/* <div className="fl w-30">
                                     <ul>
                                         <li id="price">3.00</li>
                                         <li id="price">3.50</li>
                                         <li id="price">1.50</li>
                                     </ul>
-                                </div>
+                                </div> */}
                                 <div className="milkshake fl w-100"><strong>MILKSHAKE</strong></div>
                                 <div className="milkshake-list fl w-80">
                                     <p>FRAGOLA-VANIGLIA-CIOCCOLATO-BANANA-AMARENA-CARAMELLO SALATO-OREO</p>
                                 </div>
                                 {/* <div className="fl w-5"><p>s</p></div> */}
-                                <div className="fl w-15" id="milkprice"><p>5.00</p></div>
+                                {/* <div className="fl w-15" id="milkprice"><p>5.00</p></div> */}
                             </div>
                         </Breakpoint>
                     </div>
@@ -299,9 +299,9 @@ export default class Menu extends Component {
                                     </div>
                                     <div className="price1 fl w-25">
                                         <ul>
-                                            <li><span>SINGLE</span> <p id="price">5.60</p></li>
-                                            <li><span id="double">DOUBLE</span> <p id="price">7.60</p></li>
-                                            <li><span>TRIPLE</span> <p id="price">9.60</p></li>
+                                            <li><span>SINGLE</span> </li>
+                                            <li><span id="double">DOUBLE</span> </li>
+                                            <li><span>TRIPLE</span> </li>
                                         </ul>
                                     </div>
                                     <div className="menu fl w-25">
@@ -310,9 +310,9 @@ export default class Menu extends Component {
                                     </div>
                                     <div className="price1m fl w-25">
                                         <ul>
-                                            <li><span>SINGLE</span> <p id="price">11.50</p></li>
-                                            <li><span id="double">DOUBLE</span> <p id="price">13.50</p></li>
-                                            <li><span>TRIPLE</span> <p id="price">15.50</p></li>
+                                            <li><span>SINGLE</span> </li>
+                                            <li><span id="double">DOUBLE</span> </li>
+                                            <li><span>TRIPLE</span> </li>
                                         </ul>
                                     </div>
                                     <div className="cheeseburgez fl w-100"><strong>CHEESEBURGEZ</strong></div>
@@ -322,9 +322,9 @@ export default class Menu extends Component {
                                     </div>
                                     <div className="price2 fl w-25" >
                                         <ul>
-                                            <li><span>SINGLE</span> <p id="price">6.10</p></li>
-                                            <li><span id="double">DOUBLE</span> <p id="price">8.10</p></li>
-                                            <li><span>TRIPLE</span> <p id="price">10.10</p></li>
+                                            <li><span>SINGLE</span> </li>
+                                            <li><span id="double">DOUBLE</span> </li>
+                                            <li><span>TRIPLE</span> </li>
                                         </ul>
                                     </div>
                                     <div className="menu fl w-25">
@@ -333,9 +333,9 @@ export default class Menu extends Component {
                                     </div>
                                     <div className="price2m fl w-25">
                                         <ul>
-                                            <li><span>SINGLE</span> <p id="price">12.00</p></li>
-                                            <li><span id="double">DOUBLE</span> <p id="price">14.00</p></li>
-                                            <li><span>TRIPLE</span> <p id="price">16.00</p></li>
+                                            <li><span>SINGLE</span> </li>
+                                            <li><span id="double">DOUBLE</span> </li>
+                                            <li><span>TRIPLE</span> </li>
                                         </ul>
                                     </div>
                                     <div className="smokeburgez fl w-100"><strong>SMOKEBURGEZ</strong></div>
@@ -345,9 +345,9 @@ export default class Menu extends Component {
                                     </div>
                                     <div className="price3 fl w-25" >
                                         <ul>
-                                            <li><span>SINGLE</span> <p id="price">6.30</p></li>
-                                            <li><span id="double">DOUBLE</span> <p id="price">8.30</p></li>
-                                            <li><span>TRIPLE</span> <p id="price">10.30</p></li>
+                                            <li><span>SINGLE</span> </li>
+                                            <li><span id="double">DOUBLE</span> </li>
+                                            <li><span>TRIPLE</span> </li>
                                         </ul>
                                     </div>
                                     <div className="menu fl w-25">
@@ -356,9 +356,9 @@ export default class Menu extends Component {
                                     </div>
                                     <div className="price3m fl w-25">
                                         <ul>
-                                            <li><span>SINGLE</span> <p id="price">12.20</p></li>
-                                            <li><span id="double">DOUBLE</span> <p id="price">14.20</p></li>
-                                            <li><span>TRIPLE</span> <p id="price">16.20</p></li>
+                                            <li><span>SINGLE</span> </li>
+                                            <li><span id="double">DOUBLE</span> </li>
+                                            <li><span>TRIPLE</span> </li>
                                         </ul>
                                     </div>
                                     <div className="bigburgez fl w-100"><strong>BIGBURGEZ</strong></div>
@@ -368,9 +368,9 @@ export default class Menu extends Component {
                                     </div>
                                     <div className="price4 fl w-25" >
                                         <ul>
-                                            <li><span>SINGLE</span> <p id="price">6.90</p></li>
-                                            <li><span id="double">DOUBLE</span> <p id="price">8.80</p></li>
-                                            <li><span>TRIPLE</span> <p id="price">10.60</p></li>
+                                            <li><span>SINGLE</span> </li>
+                                            <li><span id="double">DOUBLE</span> </li>
+                                            <li><span>TRIPLE</span> </li>
                                         </ul>
                                     </div>
                                     <div className="menu fl w-25">
@@ -379,9 +379,9 @@ export default class Menu extends Component {
                                     </div>
                                     <div className="price4m fl w-25">
                                         <ul>
-                                            <li><span>SINGLE</span> <p id="price">12.80</p></li>
-                                            <li><span id="double">DOUBLE</span> <p id="price">14.70</p></li>
-                                            <li><span>TRIPLE</span> <p id="price">16.50</p></li>
+                                            <li><span>SINGLE</span> </li>
+                                            <li><span id="double">DOUBLE</span> </li>
+                                            <li><span>TRIPLE</span> </li>
                                         </ul>
                                     </div>
                                     <div className="chickenburgez fl w-100"><strong>CHICKENBURGEZ</strong></div>
@@ -391,17 +391,12 @@ export default class Menu extends Component {
                                     </div>
                                     <div className="price5 fl w-25" >
                                         <ul>
-                                            <li><p id="pricechick">6.80</p></li>
+                                            <li><p id="pricechick"></p></li>
                                         </ul>
                                     </div>
                                     <div className="menu fl w-25">
                                         <span id="top2">ME</span>
                                         <span id="nu">NÙ</span>
-                                    </div>
-                                    <div className="price5m fl w-25">
-                                        <ul>
-                                            <li><p id="pricechick">12.70</p></li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -444,23 +439,11 @@ export default class Menu extends Component {
                                             <li>cheddar cream, bacon, jalapeño</li>
                                         </ul>
                                     </div>
-                                    <div className="fl w-10">
-                                        <p id="hotprice">4.80</p>
-                                        <p id="hotprice">5.00</p>
-                                        <p id="hotprice">5.20</p>
-                                        <p id="hotprice">5.60</p>
-                                    </div>
                                     <div className="fries fl w-100"><strong>FRIES</strong></div>
                                     <div className="fries-list fl w-70">
                                         <ul>
                                             <li>FRIES</li>
                                             <li>CHEESEFRIES</li>
-                                        </ul>
-                                    </div>
-                                    <div className="fl w-30" id="desk-price">
-                                        <ul>
-                                            <li id="price">3.00</li>
-                                            <li id="price">4.00</li>
                                         </ul>
                                     </div>
                                     <div className="drinks fl w-100"><strong>DRINKS</strong></div>
@@ -471,18 +454,10 @@ export default class Menu extends Component {
                                             <li>ACQUA</li>
                                         </ul>
                                     </div>
-                                    <div className="fl w-30" id="desk-price">
-                                        <ul>
-                                            <li id="price">3.00</li>
-                                            <li id="price">3.50</li>
-                                            <li id="price">1.50</li>
-                                        </ul>
-                                    </div>
                                     <div className="milkshake fl w-100"><strong>MILKSHAKE</strong></div>
                                     <div className="milkshake-list fl w-80">
                                         <p>FRAGOLA-VANIGLIA-CIOCCOLATO-BANANA-AMARENA-CARAMELLO SALATO-OREO</p>
                                     </div>
-                                    <div className="fl w-15" id="milkprice"><p>5.00</p></div>
                                 </div>
                             </div>
                             </Breakpoint>

@@ -77,7 +77,7 @@
         li {
             color: white;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: flex-end;
             align-items: center;
             height: 1rem;
             #price {
@@ -88,7 +88,7 @@
                 }
             }
             span {
-                width: 1rem;
+                // width: 1rem;
                 margin-left: 15px;
             }
         }
@@ -181,7 +181,7 @@
     }
 
 #double {
-    margin-right: 5px;
+    // margin-right: 5px;
 }
 }
 
