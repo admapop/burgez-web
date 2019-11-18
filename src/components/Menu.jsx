@@ -16,18 +16,6 @@ export default class Menu extends Component {
             reloaded: false
         }
     }
-
-    //   componentDidMount() {
-    //     if(!this.state.reloaded) {
-    //         this.setState({reloaded: true});
-    //         this.carousel.current.setState({
-    //             itemSize: this.carousel.current.itemsRef[0].clientHeight,
-    //             wrapperSize: this.carousel.current.itemsRef[0].clientHeight
-    //         })
-    //         console.log(this.carousel.current.state.itemSize)        
-    //     }
-    //     return;
-    //   }
     
     render() {
         return (
@@ -65,9 +53,6 @@ export default class Menu extends Component {
                 </Breakpoint>
                 <Breakpoint tablet only>
                     <Breakpoint tablet only>
-                        {/* <Headroom wrapperStyle={{background: "#3ae5fd", zIndex: "100"}}>
-                            <Logo />
-                        </Headroom> */}
                         <LogoMain />
                     </Breakpoint>
                 <Carousel ref={this.carousel} emulateTouch showThumbs={false} showStatus={false} stopOnHover={false} autoPlay={true} interval={5000} dynamicHeight={false} showIndicators={false} transitionTime={400} useKeyboardArrows={true}>
@@ -178,17 +163,12 @@ export default class Menu extends Component {
                                 </div>
                                 <div className="price5 fl w-25" >
                                     <ul>
-                                        <li><p id="pricechick"></p></li>
+                                        <li><p id="pricechick">{/* left here for layout reasons only */}</p></li>
                                     </ul>
                                 </div>
                                 <div className="menu fl w-25">
                                     <span id="top2">ME</span>
                                     <span id="nu">NÙ</span>
-                                </div>
-                                <div className="price5m fl w-25">
-                                    <ul>
-                                        {/* <li><p id="pricechick">12.70</p></li> */}
-                                    </ul>
                                 </div>
                                 <div className="hotdog fl w-100"><strong id="hotdog">HOZ DOG</strong></div>
                                 <div className="hotdog-list fl w-40">
@@ -207,25 +187,14 @@ export default class Menu extends Component {
                                         <li>cheddar cream, bacon, jalapeño</li>
                                     </ul>
                                 </div>
-                                {/* <div className="fl w-10">
-                                    <p id="hotprice">4.80</p>
-                                    <p id="hotprice">5.00</p>
-                                    <p id="hotprice">5.20</p>
-                                    <p id="hotprice">5.60</p>
-                                </div> */}
                                 <div className="fries fl w-100"><strong>FRIES</strong></div>
                                 <div className="fries-list fl w-70">
                                     <ul>
                                         <li>FRIES</li>
                                         <li>CHEESEFRIES</li>
+                                        {/* <li>CHEESEFRIES + BACON</li> */}
                                     </ul>
                                 </div>
-                                {/* <div className="fl w-30">
-                                    <ul>
-                                        <li id="price">3.00</li>
-                                        <li id="price">4.00</li>
-                                    </ul>
-                                </div> */}
                                 <div className="drinks fl w-100"><strong>DRINKS</strong></div>
                                 <div className="drinks-list fl w-70">
                                     <ul>
@@ -234,19 +203,10 @@ export default class Menu extends Component {
                                         <li>ACQUA</li>
                                     </ul>
                                 </div>
-                                {/* <div className="fl w-30">
-                                    <ul>
-                                        <li id="price">3.00</li>
-                                        <li id="price">3.50</li>
-                                        <li id="price">1.50</li>
-                                    </ul>
-                                </div> */}
                                 <div className="milkshake fl w-100"><strong>MILKSHAKE</strong></div>
                                 <div className="milkshake-list fl w-80">
                                     <p>FRAGOLA-VANIGLIA-CIOCCOLATO-BANANA-AMARENA-CARAMELLO SALATO-OREO</p>
                                 </div>
-                                {/* <div className="fl w-5"><p>s</p></div> */}
-                                {/* <div className="fl w-15" id="milkprice"><p>5.00</p></div> */}
                             </div>
                         </Breakpoint>
                     </div>
@@ -391,7 +351,7 @@ export default class Menu extends Component {
                                     </div>
                                     <div className="price5 fl w-25" >
                                         <ul>
-                                            <li><p id="pricechick"></p></li>
+                                            <li><p id="pricechick">{/* left here for layout reasons only */}</p></li>
                                         </ul>
                                     </div>
                                     <div className="menu fl w-25">
@@ -444,6 +404,7 @@ export default class Menu extends Component {
                                         <ul>
                                             <li>FRIES</li>
                                             <li>CHEESEFRIES</li>
+                                            {/* <li>CHEESEFRIES + BACON</li> */}
                                         </ul>
                                     </div>
                                     <div className="drinks fl w-100"><strong>DRINKS</strong></div>
